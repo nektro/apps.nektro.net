@@ -25,7 +25,11 @@ document.getElementById('pivot').addEventListener('fl-pivot.select', function(e)
             let tbl = __makeElement('table');
             tbl.appendChild(__makeElement('tbody'));
             if (r.status === 'ok') {
-                r.articles.forEach(a => {
+                r.articles.sort(function(a, b) {
+                    if (b.publishedAt === null) return 1;
+                    return b.publishedAt.localeCompare(a.publishedAt);
+                })
+                .forEach(a => {
                     let row = __makeElement('tr');
                     row.appendChild(__makeElement('td', [], a.source.name));
                     let title = __makeElement('td');
