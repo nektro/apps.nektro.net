@@ -7,7 +7,7 @@ import { __makeElement } from "https://cdn.rawgit.com/Nektro/fluent_design.js/cc
 document.getElementById('pivot').addEventListener('fl-pivot.select', function(e) {
     const piv_item = (this.querySelector(`${this.selector_nav}.active`));
     const i = Array.from(piv_item.parentElement.children).indexOf(piv_item);
-    const piv_content = this.querySelectorAll(this.selector_content)[i];
+    const piv_content = this.querySelectorAll(this.selector_content)[i].children[1];
     const cat = piv_item.getAttribute('data-cat');
     const fetched = piv_item.getAttribute('data-fed') !== null;
     const API_KEY = 'b74dfab7ae05467db9bea1fbf4693138';
