@@ -1,5 +1,6 @@
 body {
     font-family: "Segoe UI", "Open Sans";
+    overflow-x: hidden;
 }
 :root {
     --fluent-theme-color: #FF4343;
