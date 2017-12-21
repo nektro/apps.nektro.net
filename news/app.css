@@ -66,3 +66,9 @@ fl-pivot table td {
 .content .x-card > h3 {
     flex-grow: 1;
 }
+.content .x-card > p > * {
+    vertical-align: middle;
+}
+.content .x-card > p > img {
+    margin-right: 5px;
+}

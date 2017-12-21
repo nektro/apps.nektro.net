@@ -42,7 +42,10 @@ document.getElementById('pivot').addEventListener('fl-pivot.select', function(e)
                         makeElement('div', {class:'x-card'}, [
                             makeElement('img', { src:a.urlToImage, alt:a.title }),
                             makeElement('h3', {}, [a.title]),
-                            makeElement('p', {}, [a.source.name])
+                            makeElement('p', {}, [
+                                makeElement('img', { src:`icons/${a.source.id}.png`, alt:`${a.source.name} Logo` }),
+                                makeElement('span', {}, a.source.name)
+                            ])
                         ])
                     ]));
                 });
