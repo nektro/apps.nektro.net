@@ -42,3 +42,26 @@ fl-pivot table td {
 .x-card > *:not(img) {
     padding: 0px 10px;
 }
+
+.content > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.content > div > div a {
+    flex-grow: 1;
+    width: 15rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+}
+.content .x-card {
+    height: 100%;
+    max-width: 20rem;
+}
+.content .x-card > img {
+    height: 15rem;
+}
+.content .x-card > h3 {
+    flex-grow: 1;
+}
