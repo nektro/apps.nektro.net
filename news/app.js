@@ -2,7 +2,17 @@
  * Copyright (c) 2017 Sean Denny
  */
 //
-import { __makeElement } from "https://cdn.rawgit.com/Nektro/fluent_design.js/cc2f256/src/FluentElement.js";
+export function makeElement(tag, attrs={}, children=[]) {
+    let ele = document.createElement(tag);
+    for (const prop in attrs) {
+        ele.setAttribute(prop, attrs[prop]);
+    }
+    for (const child of children) {
+        if (child instanceof HTMLElement) ele.appendChild(child);
+        else ele.appendChild(document.createTextNode(child));
+    }
+    return ele;
+}
 //
 document.getElementById('pivot').addEventListener('fl-pivot.select', function(e) {
     const piv_item = (this.querySelector(`${this.selector_nav}.active`));
@@ -22,23 +32,21 @@ document.getElementById('pivot').addEventListener('fl-pivot.select', function(e)
         .then(r => r.json())
         .then(r => {
             console.log(`Loaded category: ${cat}`);
-            let tbl = __makeElement('table');
-            tbl.appendChild(__makeElement('tbody'));
             if (r.status === 'ok') {
                 r.articles.sort(function(a, b) {
                     if (b.publishedAt === null) return 1;
                     return b.publishedAt.localeCompare(a.publishedAt);
                 })
-                .forEach(a => {
-                    let row = __makeElement('tr');
-                    row.appendChild(__makeElement('td', [], a.source.name));
-                    let title = __makeElement('td');
-                    title.appendChild(__makeElement('a', [['target','_blank'],['href',a.url]], a.title));
-                    row.appendChild(title);
-                    tbl.children[0].appendChild(row);
+                .forEach((a) => {
+                    piv_content.appendChild(makeElement('a', { href:a.url, target:'_blank' }, [
+                        makeElement('div', {class:'x-card'}, [
+                            makeElement('img', { src:a.urlToImage, alt:a.title }),
+                            makeElement('h3', {}, [a.title]),
+                            makeElement('p', {}, [a.source.name])
+                        ])
+                    ]));
                 });
             }
-            piv_content.appendChild(tbl);
             piv_item.setAttribute('data-fed', 'true');
         });
     }
