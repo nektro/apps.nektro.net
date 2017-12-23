@@ -1,0 +1,13 @@
+{
+    "name": "Camera",
+    "short_name": "Camera",
+    "start_url": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#68768A",
+    "background_color": "#FFFFFF",
+    "description": "Take photos.",
+    "icons": [
+        { "src": "./icons/homescreen257.png", "sizes": "257x257", "type": "image/png" }
+    ]
+}
