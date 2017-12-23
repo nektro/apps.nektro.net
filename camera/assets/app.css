@@ -1,0 +1,45 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    font-family: "Open Sans";
+}
+main {
+    height: calc(100% - 32px);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#snap {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    bottom: 2em;
+    border: 5px solid #ccc;
+}
+#snap::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+#snap:hover {
+    cursor: pointer;
+}
+#snap span {
+    font-size: 2em;
+    user-select: none;
+    border-radius: 50%;
+    background-color: #ccc;
+    padding: .25em;
+    border: 5px solid transparent;
+    margin: 5px;
+}
+#snap span:active {
+    background-color: #aaa;
+    transform: scale(.9);
+}
