@@ -1,0 +1,13 @@
+{
+    "name": "Calculator",
+    "short_name": "Calculator",
+    "start_url": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#10893e",
+    "background_color": "#FFFFFF",
+    "description": "Calculator provides simple mathematical functions in a beautiful web app.",
+    "icons": [
+        { "src": "../icons/homescreen512.png", "sizes": "512x512", "type": "image/png" }
+    ]
+}
