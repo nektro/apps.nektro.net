@@ -8,6 +8,6 @@
     "background_color": "#FFFFFF",
     "description": "Take photos.",
     "icons": [
-        { "src": "./icons/homescreen257.png", "sizes": "257x257", "type": "image/png" }
+        { "src": "../homescreen512.png", "sizes": "512x512", "type": "image/png" }
     ]
 }
