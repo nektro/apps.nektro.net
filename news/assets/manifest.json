@@ -8,6 +8,6 @@
     "background_color": "#FFFFFF",
     "description": "Get breaking news headlines, and search for articles from over 5,000 news sources and blogs.",
     "icons": [
-        { "src": "../homescreen512.png", "sizes": "512x512", "type": "image/png" }
+        { "src": "../news.png", "sizes": "512x512", "type": "image/png" }
     ]
 }
