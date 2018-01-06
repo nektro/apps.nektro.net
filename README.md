@@ -14,7 +14,7 @@ View all these apps online at https://apps.nektro.net/
 
 ## License
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.  
-The app icons are from the amazing "Nolan" icon set from [Icons8](https://icons8.com/). Used under [CC BY-ND 3.0](https://creativecommons.org/licenses/by-nd/3.0/)
+The app icons are from the amazing "Dusk" icon set from [Icons8](https://icons8.com/). Used under [CC BY-ND 3.0](https://creativecommons.org/licenses/by-nd/3.0/)
 
 ## Contact
 - [On Twitter](https://twitter.com/Nektro)
