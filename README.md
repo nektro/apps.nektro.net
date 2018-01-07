@@ -17,6 +17,6 @@ This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENS
 The app icons are from the amazing "Dusk" icon set from [Icons8](https://icons8.com/). Used under [CC BY-ND 3.0](https://creativecommons.org/licenses/by-nd/3.0/)
 
 ## Contact
-- [On Twitter](https://twitter.com/Nektro)
-- [On GitHub](https://github.com/Nektro/apps.nektro.net/issues)
-- [On Discord](https://discord.gg/beUGrGk)
+- [@Nektro On Twitter](https://twitter.com/Nektro)
+- [@Nektro On GitHub](https://github.com/Nektro/apps.nektro.net/issues)
+- [Join Me On Discord](https://discord.gg/beUGrGk)
