@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "theme_color": "#68768A",
     "background_color": "#FFFFFF",
-    "description": "Take photos.",
+    "description": "Take wonderful photos right from the web.",
     "icons": [
         { "src": "../camera.png", "sizes": "512x512", "type": "image/png" }
     ]
