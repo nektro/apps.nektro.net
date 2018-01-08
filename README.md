@@ -37,6 +37,7 @@ A list of all currently planned apps (in alphabetical order) and whether or not 
 | ❌ | `stocks`      | Stocks      | ... |
 | ❌ | `stopwatch`   | Stopwatch   | ... |
 | ❌ | `timer`       | Timer       | ... |
+| ❌ | `torrent`     | Web Torrent | ... |
 | ❌ | `videos`      | Videos      | ... |
 | ❌ | `voice_memos` | Voice Memos | ... |
 | ❌ | `weather`     | Weather     | ... |
