@@ -13,6 +13,10 @@ gulp.task('static', function() {
     .pipe(gulp.dest('bin'));
 });
 
+gulp.task('netlify', function() {
+    return gulp.src('./src/_headers').pipe(gulp.dest('bin'));
+})
+
 gulp.task('default', [
-    'html', 'static'
+    'html', 'static', 'netlify'
 ]);
