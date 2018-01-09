@@ -1,4 +1,4 @@
-@@include('./../../_resources/_manifest.html' , {
+@@include('../_manifest.html' , {
     name: 'calculator',
     title: 'Calculator',
     color: '#10893e',
