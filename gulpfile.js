@@ -24,6 +24,10 @@ gulp.task('sitemap', function() {
     .pipe(gulp.dest('bin'));
 });
 
+gulp.task('site-dev', [
+    'html', 'static'
+]);
+
 gulp.task('default', [
-    'html', 'static', 'netlify', 'sitemap'
+    'site-dev', 'netlify', 'sitemap'
 ]);
