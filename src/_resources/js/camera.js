@@ -1,5 +1,4 @@
-/**
- */
+/* jshint esversion:6 */
 //
 import { x_assert } from "./x_assert.js";
 
