@@ -42,6 +42,10 @@ A list of all currently planned apps (in alphabetical order) and whether or not 
 | ❌ | `voice_memos` | Voice Memos | ... |
 | ❌ | `weather`     | Weather     | ... |
 
+#Known Issues
+- Custom Elements not supported in Edge
+- ES6 Modules not supported in Firefox
+
 ## License
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.  
 The app icons are from the amazing "Dusk" icon set from [Icons8](https://icons8.com/). Used under [CC BY-ND 3.0](https://creativecommons.org/licenses/by-nd/3.0/)
