@@ -1,6 +1,7 @@
 /* jshint esversion:6 */
 const gulp = require('gulp');
 const gih = require("gulp-include-html");
+const sitemap = require('gulp-sitemap');
 
 gulp.task('html', function() {
     return gulp.src('./src/**/*.{html,json}')
@@ -15,8 +16,14 @@ gulp.task('static', function() {
 
 gulp.task('netlify', function() {
     return gulp.src('./src/_headers').pipe(gulp.dest('bin'));
-})
+});
+
+gulp.task('sitemap', function() {
+    return gulp.src('./src/*.html', { read:false })
+    .pipe(sitemap({ siteUrl:'https://apps.nektro.net' }))
+    .pipe(gulp.dest('bin'));
+});
 
 gulp.task('default', [
-    'html', 'static', 'netlify'
+    'html', 'static', 'netlify', 'sitemap'
 ]);
