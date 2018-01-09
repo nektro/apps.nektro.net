@@ -1,13 +1,6 @@
-{
-    "name": "Camera",
-    "short_name": "Camera",
-    "start_url": "./",
-    "display": "standalone",
-    "orientation": "portrait",
-    "theme_color": "#68768A",
-    "background_color": "#FFFFFF",
-    "description": "Take wonderful photos right from the web.",
-    "icons": [
-        { "src": "../camera.png", "sizes": "512x512", "type": "image/png" }
-    ]
-}
+@@include('./../../_resources/_manifest.html' , {
+    name: 'camera',
+    title: 'Camera',
+    color: '#68768A',
+    'description': "Take wonderful photos right from the web."
+})

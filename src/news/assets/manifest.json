@@ -1,13 +1,6 @@
-{
-    "name": "News",
-    "short_name": "News",
-    "start_url": "./",
-    "display": "standalone",
-    "orientation": "portrait",
-    "theme_color": "#FF4343",
-    "background_color": "#FFFFFF",
-    "description": "Get breaking news headlines, and search for articles from over 5,000 news sources and blogs.",
-    "icons": [
-        { "src": "../news.png", "sizes": "512x512", "type": "image/png" }
-    ]
-}
+@@include('./../../_resources/_manifest.html' , {
+    name: 'news',
+    title: 'News',
+    color: '#FF4343',
+    'description': "Get breaking news headlines, and search for articles from over 5,000 news sources and blogs."
+})

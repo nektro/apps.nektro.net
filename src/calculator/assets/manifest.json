@@ -1,13 +1,6 @@
-{
-    "name": "Calculator",
-    "short_name": "Calculator",
-    "start_url": "./",
-    "display": "standalone",
-    "orientation": "portrait",
-    "theme_color": "#10893e",
-    "background_color": "#FFFFFF",
-    "description": "Calculator provides simple mathematical functions in a beautiful web app.",
-    "icons": [
-        { "src": "../calculator.png", "sizes": "512x512", "type": "image/png" }
-    ]
-}
+@@include('./../../_resources/_manifest.html' , {
+    name: 'calculator',
+    title: 'Calculator',
+    color: '#10893e',
+    'description': "Calculator provides simple mathematical functions in a beautiful web app."
+})
