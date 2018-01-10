@@ -41,7 +41,7 @@ document.getElementById('pivot').addEventListener('fl-pivot.select', function(e)
                             makeElement('img', { src:a.urlToImage, alt:a.title }),
                             makeElement('h3', {}, [a.title]),
                             makeElement('p', {}, [
-                                makeElement('img', { src:`./_resources/news_logos/${a.source.id}.png`, alt:`${a.source.name} Logo` }),
+                                makeElement('img', { src:`../_resources/news_logos/${a.source.id}.png`, alt:`${a.source.name} Logo` }),
                                 makeElement('span', {}, a.source.name)
                             ])
                         ])

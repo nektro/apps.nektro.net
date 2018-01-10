@@ -19,7 +19,7 @@ gulp.task('netlify', function() {
 });
 
 gulp.task('sitemap', function() {
-    return gulp.src('./src/*.html', { read:false })
+    return gulp.src('./src/**/index.html', { read:false })
     .pipe(sitemap({ siteUrl:'https://apps.nektro.net' }))
     .pipe(gulp.dest('bin'));
 });
