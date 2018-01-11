@@ -39,7 +39,7 @@ function do_math(a, o, b) {
 }
 
 //
-for (const btn of document.body.children[1].children) {
+for (const btn of document.body.children[2].children) {
     if (btn.nodeName === 'DIV') {
         btn.addEventListener('click', (e) => {
             const btx = btn.firstElementChild.innerText;

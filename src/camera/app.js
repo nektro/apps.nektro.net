@@ -1,6 +1,6 @@
 /* jshint esversion:6 */
 //
-import { x_assert } from "./x_assert.js";
+import { x_assert } from "../_resources/x_assert.js";
 
 //
 const vid = document.getElementById('display');
