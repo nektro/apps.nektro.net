@@ -25,6 +25,7 @@ A list of all currently planned apps (in alphabetical order) and whether or not 
 | ❌ | `contacts`    | Contacts    | ... |
 | ❌ | `email`       | Email       | ... |
 | ❌ | `exchange`    | Exchange    | ... |
+| ❌ | `feedback`    | Feedback    | ... |
 | ❌ | `gamepad`     | Gamepad     | ... |
 | ❌ | `level`       | Level       | ... |
 | ❌ | `maps`        | Maps        | ... |
