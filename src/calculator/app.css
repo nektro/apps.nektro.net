@@ -1,6 +1,3 @@
-body {
-    font-family: 'Open Sans';
-}
 main {
     height: calc(100vh - 32px);
     display: grid;
