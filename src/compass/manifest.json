@@ -1,0 +1,6 @@
+@@include('../_resources/_manifest.html' , {
+    name: 'compass',
+    title: 'Compass',
+    color: '#0078d7',
+    description: 'A compass is part of the essential outdoors toolkit. With this web app, you can now have one.'
+})
