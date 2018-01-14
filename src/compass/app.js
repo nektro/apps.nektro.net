@@ -53,6 +53,7 @@ window.addEventListener('deviceorientation', function(e) {
               : compassHeading(e.alpha, e.beta, e.gamma);
     ele_deg.innerHTML = `${parseInt(deg)}°`;
     ele_face.style.transform = `rotate(${parseInt(deg)}deg)`;
+    Array.from(ele_face.children).forEach(v => v.style.transform = `rotate(${-parseInt(deg)}deg)`);
 });
 
 // fetch info for details below
