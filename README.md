@@ -21,7 +21,7 @@ A list of all currently planned apps (in alphabetical order) and whether or not 
 | ❌ | `calendar`    | Calendar    | ... |
 | ✔️ | `camera`      | Camera      | Take wonderful photos right from the web. |
 | ❌ | `clock`       | Clock       | ... |
-| ❌ | `compass`     | Compass     | ... |
+| ✔️ | `compass`     | Compass     | A compass is part of the essential outdoors toolkit. With this web app, you can now have one. |
 | ❌ | `contacts`    | Contacts    | ... |
 | ❌ | `email`       | Email       | ... |
 | ❌ | `exchange`    | Exchange    | ... |
