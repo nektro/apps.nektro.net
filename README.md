@@ -7,6 +7,10 @@ View all these apps online at https://apps.nektro.net/
 ## Current Progress
 A list of all currently planned apps (in alphabetical order) and whether or not they are published
 
+<style>
+td { white-space:nowrap; }
+</style>
+
 | Published? | `id` | Name | Description |
 | ---------- | ---- | ---- | ----------- |
 | ✔️ | `calculator`  | Calculator  | Calculator provides simple mathematical functions in a beautiful web app. |
