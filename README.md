@@ -36,7 +36,7 @@ A list of all currently planned apps (in alphabetical order) and whether or not 
 | ❌ | `voice_memos` | Voice Memos | ... |
 | ❌ | `weather`     | Weather     | ... |
 
-#Known Issues
+## Known Issues
 - Custom Elements not supported in Edge
 - ES6 Modules not supported in Firefox
 
