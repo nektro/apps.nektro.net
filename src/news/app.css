@@ -49,8 +49,8 @@ fl-pivot table td {
 }
 .content > div > div a {
     flex-grow: 1;
-    margin: 1rem;
     width: 15em;
+    margin: 0.5em;
     text-decoration: none;
     color: black;
 }
