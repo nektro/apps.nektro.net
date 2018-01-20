@@ -59,7 +59,7 @@ fl-pivot table td {
 .content .x-card > img {
     height: 10em;
 }
-.content .x-card > h3 {
+.content .x-card > h4 {
     flex-grow: 1;
 }
 .content .x-card > p {

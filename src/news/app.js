@@ -39,7 +39,7 @@ document.getElementById('pivot').addEventListener('fl-pivot.select', function(e)
                     piv_content.appendChild(makeElement('a', { href:a.url, target:'_blank' }, [
                         makeElement('div', {class:'x-card'}, [
                             makeElement('img', { src:a.urlToImage, alt:a.title }),
-                            makeElement('h3', {}, [a.title]),
+                            makeElement('h4', {}, [a.title]),
                             makeElement('p', {}, [
                                 makeElement('img', { src:`${(a.url.substring(0,a.url.indexOf('/',8)))}/favicon.ico`, alt:'', width:'16', height:'16' }),
                                 makeElement('span', {}, a.source.name)
