@@ -47,17 +47,17 @@ fl-pivot table td {
 }
 .content > div > div a {
     flex-grow: 1;
-    width: 15rem;
     margin: 1rem;
+    width: 15em;
     text-decoration: none;
     color: black;
 }
 .content .x-card {
     height: 100%;
-    max-width: 20rem;
+    max-width: 20em;
 }
 .content .x-card > img {
-    height: 10rem;
+    height: 10em;
 }
 .content .x-card > h3 {
     flex-grow: 1;
