@@ -19,6 +19,9 @@ td { white-space:nowrap; }
 | ❌ | `clock`         | Clock         | ... |
 | ✔️ | `compass`       | Compass       | A compass is part of the essential outdoors toolkit. With this web app, you can now have one. |
 | ❌ | `contacts`      | Contacts      | ... |
+| ❌ | `convert_audio` | Convert Audio | ... |
+| ❌ | `convert_image` | Convert Image | ... |
+| ❌ | `convert_video` | Convert Video | ... |
 | ❌ | `drive`         | Drives        | View contents of external drives (flash drives, sd cards, etc) |
 | ❌ | `email`         | Email         | ... |
 | ❌ | `exchange`      | Exchange      | ... |
