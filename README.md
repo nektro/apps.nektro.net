@@ -52,5 +52,5 @@ The app icons are from the amazing "Dusk" icon set from [Icons8](https://icons8.
 
 ## Contact
 - [@Nektro On Twitter](https://twitter.com/Nektro)
-- [@Nektro On GitHub](https://github.com/Nektro/apps.nektro.net/issues)
+- [@Nektro On GitHub](https://github.com/Nektro)
 - [Join Me On Discord](https://discord.gg/beUGrGk)
