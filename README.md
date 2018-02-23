@@ -39,7 +39,7 @@ td { white-space:nowrap; }
 | ❌❌ | `level`         | Level         | ... |
 | ❌❌ | `maps`          | Maps          | ... |
 | ❌❌ | `midi`          | MIDI Player   | ... |
-| ❌❌ | `music`         | Music         | ... |
+| ✔️❌ | `music`         | Music         | ... |
 | ✔️❌ | `news`          | News          | Powered by [News API](https://newsapi.org/). Get breaking news headlines, and search for articles from over 5,000 news sources and blogs. |
 | ❌❌ | `notes`         | Notes         | ... |
 | ❌❌ | `pdf`           | PDF           | View and Merge |
