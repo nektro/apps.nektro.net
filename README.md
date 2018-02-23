@@ -1,5 +1,6 @@
 [pub]: https://png.icons8.com/color/24/000000/domain.png
 [swe]: https://png.icons8.com/color/24/000000/wifi-off.png
+[out]: https://png.icons8.com/color/16/000000/external-link.png
 
 # apps.nektro.net
 A suite of Progressive Web Apps built to provide basic applications commonly found on many operating systems available as web apps.
@@ -14,13 +15,13 @@ Key:
 - ![][pub] : Published live on https://apps.nektro.net/
 - ![][swe] : Service Worker enabled and Works Offline
 
-| ![Published][pub]? ![Works Offine][swe]? | URL `id` | Name |
-| ---------- | ---- | ---- |
-| ✔️❌ | `calculator`    | Calculator    |
+| ![Published][pub]? ![Works Offine][swe]? | URL `id` | Name | Link |
+| ---------- | ---- | ---- | ---- |
+| ✔️❌ | `calculator`    | Calculator    | [Link ![][out]](https://apps.nektro.net/calculator/) |
 | ❌❌ | `calendar`      | Calendar      |
-| ✔️❌ | `camera`        | Camera        |
+| ✔️❌ | `camera`        | Camera        | [Link ![][out]](https://apps.nektro.net/camera/) |
 | ❌❌ | `clock`         | Clock         |
-| ✔️❌ | `compass`       | Compass       |
+| ✔️❌ | `compass`       | Compass       | [Link ![][out]](https://apps.nektro.net/compass/) |
 | ❌❌ | `contacts`      | Contacts      |
 | ❌❌ | `convert_audio` | Convert Audio |
 | ❌❌ | `convert_image` | Convert Image |
@@ -35,8 +36,8 @@ Key:
 | ❌❌ | `level`         | Level         |
 | ❌❌ | `maps`          | Maps          |
 | ❌❌ | `midi`          | MIDI Player   |
-| ✔️❌ | `music`         | Music         |
-| ✔️❌ | `news`          | News          |
+| ✔️❌ | `music`         | Music         | [Link ![][out]](https://apps.nektro.net/music/) |
+| ✔️❌ | `news`          | News          | [Link ![][out]](https://apps.nektro.net/news/) |
 | ❌❌ | `notes`         | Notes         |
 | ❌❌ | `pdf`           | PDF           |
 | ❌❌ | `photos`        | Photos        |
