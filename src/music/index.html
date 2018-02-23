@@ -1,0 +1,51 @@
+@@include('../_resources/_header.html' , {
+    name: 'music',
+    title: 'Music',
+    color: '#ea005e',
+    description: 'Listen to your favorite music with ease anywhere there\'s a web browser.'
+})
+        <main>
+            <fl-pivot id="pivot">
+                <div class="nav">
+                    <nav>
+                        <fl-pivot-item><span class="material-icons">library_music</span> <span>Library</span></fl-pivot-item>
+                        <fl-pivot-item><span class="material-icons">library_add</span> <span>Upload</span></fl-pivot-item>
+                    </nav>
+                </div>
+                <div class="content">
+                    <div>
+                        <h1>Library</h1>
+                        <section id="music_section">
+                            <div>
+                                <table id="music_table">
+                                    <thead>
+                                        <td><!-- play button --></td>
+                                        <td>ID</td>
+                                        <td>Title</td>
+                                        <td>Artist</td>
+                                        <td>Album</td>
+                                        <td>Track ID</td>
+                                        <td>Release Year</td>
+                                        <td>Genre</td>
+                                    </thead>
+                                    <tbody id="music_list"></tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                    <div>
+                        <h1>Upload</h1>
+                        <div>
+                            <input type="file" accept="audio/*" id="filein" />
+                        </div>
+                    </div>
+                </div>
+            </fl-pivot>
+        </main>
+        <footer>
+            <div>
+                <progress id="song_progress" min="0" max="100" value="0"></progress>
+            </div>
+        </footer>
+    </body>
+</html>

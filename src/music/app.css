@@ -1,0 +1,116 @@
+body {
+    overflow-y: scroll;
+}
+
+main {
+    margin-bottom: 64px;
+}
+main > fl-pivot .nav {
+    max-height: 46px;
+}
+main > fl-pivot .nav nav {
+    max-height: 46px;
+    overflow-x: hidden;
+}
+main > fl-pivot .nav nav fl-pivot-item {
+    width: calc(50vw - 40px);
+    text-align: center;
+}
+main > fl-pivot .nav nav fl-pivot-item ~ fl-pivot-item {
+    border-left: 1px solid #ccc;
+}
+main > fl-pivot .nav nav fl-pivot-item span {
+    vertical-align: top;
+}
+main > fl-pivot .content > div:first-child {
+    margin: 0;
+}
+main > fl-pivot .content > div:first-child h1 {
+    margin: .67em 15px;
+}
+
+#music_section {
+    --page-height: calc(100vh - 88px - 30px - 3.4em);
+    position: relative;
+    overflow-y: hidden;
+    min-height: var(--page-height);
+}
+#music_section:first-child {
+    padding: 0 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    min-height: var(--page-height);
+}
+
+#music_table {
+    min-width: 100%;
+    border-spacing: 0;
+}
+#music_table td {
+    padding: .25em;
+    white-space: nowrap;
+}
+#music_table tbody tr {
+    cursor: pointer;
+}
+#music_table tbody tr:hover {
+    background-color: #ddd;
+}
+#music_table tbody tr.active {
+    background-color: #aaf;
+}
+#music_table tbody tr.active:hover {
+    background-color: #88f;
+}
+#music_table tbody tr td:first-child {
+    padding-left: .25em;
+}
+
+#song_progress {
+    width: 100%;
+    display: block;
+}
+
+/* sticky header */
+body > header,
+main > fl-pivot .nav {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+main > fl-pivot .nav {
+    top: 32px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+}
+footer > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #ccc;
+}
+footer > div:nth-child(2) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > div:nth-child(2) > div > span {
+    display: block;
+    padding: .25em;
+    margin: .25em;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+}
+footer > div:nth-child(2) > div > span:hover {
+    background-color: #aaa;
+}
+footer > div:nth-child(2) > div > span.active {
+    background-color: #777;
+    color: white;
+}

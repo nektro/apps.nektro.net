@@ -1,0 +1,6 @@
+@@include('../_resources/_manifest.html' , {
+    name: 'music',
+    title: 'Music',
+    color: '#ea005e',
+    description: 'Listen to your favorite music with ease anywhere there\'s a web browser.'
+})
