@@ -57,7 +57,9 @@ td { white-space:nowrap; }
 
 ## Known Issues
 - Custom Elements not supported in Edge
+- IndexedDB not supported in Edge
 - ES6 Modules not supported in Firefox
+- Lots  not supported in Safari private mode
 
 ## License
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.  
