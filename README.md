@@ -14,10 +14,6 @@ Key:
 - ![][pub] : Published live on https://apps.nektro.net/
 - ![][swe] : Service Worker enabled and Works Offline
 
-<style>
-td { white-space:nowrap; }
-</style>
-
 | ![Published][pub]? ![Works Offine][swe]? | URL `id` | Name |
 | ---------- | ---- | ---- |
 | ✔️❌ | `calculator`    | Calculator    |
