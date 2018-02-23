@@ -71,7 +71,8 @@ main > div:nth-child(2) {
 }
 main > div:nth-child(2) > div:nth-child(1) {
     grid-row: 1 / 3;
-    display: flex;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(2, 1fr);
 }
 main > div:nth-child(2) > div:nth-child(1) > div {
     flex-grow: 1;
