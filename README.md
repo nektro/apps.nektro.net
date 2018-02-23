@@ -32,6 +32,7 @@ td { white-space:nowrap; }
 | ❌❌ | `drive`         | Drives        | View contents of external drives (flash drives, sd cards, etc) |
 | ❌❌ | `elements`      | Elements      | Periodic Table |
 | ❌❌ | `email`         | Email         | ... |
+| ❌❌ | `emulator`      | Emulator      | ... |
 | ❌❌ | `exchange`      | Exchange      | ... |
 | ❌❌ | `feedback`      | Feedback      | ... |
 | ❌❌ | `gamepad`       | Gamepad       | ... |
