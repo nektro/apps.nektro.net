@@ -23,12 +23,14 @@ td { white-space:nowrap; }
 | ❌ | `convert_image` | Convert Image | ... |
 | ❌ | `convert_video` | Convert Video | ... |
 | ❌ | `drive`         | Drives        | View contents of external drives (flash drives, sd cards, etc) |
+| ❌ | `elements`      | Elements      | Periodic Table |
 | ❌ | `email`         | Email         | ... |
 | ❌ | `exchange`      | Exchange      | ... |
 | ❌ | `feedback`      | Feedback      | ... |
 | ❌ | `gamepad`       | Gamepad       | ... |
 | ❌ | `level`         | Level         | ... |
 | ❌ | `maps`          | Maps          | ... |
+| ❌ | `midi`          | MIDI Player   | ... |
 | ❌ | `music`         | Music         | ... |
 | ✔️ | `news`          | News          | Powered by [News API](https://newsapi.org/). Get breaking news headlines, and search for articles from over 5,000 news sources and blogs. |
 | ❌ | `notes`         | Notes         | ... |
