@@ -17,11 +17,11 @@ Key:
 
 | ![Published][pub]? ![Works Offine][swe]? | URL `id` | Name | Link |
 | ---------- | ---- | ---- | ---- |
-| ✔️❌ | `calculator`    | Calculator    | [Link ![][out]](https://apps.nektro.net/calculator/) |
+| ✔️✔️ | `calculator`    | Calculator    | [Link ![][out]](https://apps.nektro.net/calculator/) |
 | ❌❌ | `calendar`      | Calendar      |
-| ✔️❌ | `camera`        | Camera        | [Link ![][out]](https://apps.nektro.net/camera/) |
+| ✔️✔️ | `camera`        | Camera        | [Link ![][out]](https://apps.nektro.net/camera/) |
 | ❌❌ | `clock`         | Clock         |
-| ✔️❌ | `compass`       | Compass       | [Link ![][out]](https://apps.nektro.net/compass/) |
+| ✔️✔️ | `compass`       | Compass       | [Link ![][out]](https://apps.nektro.net/compass/) |
 | ❌❌ | `contacts`      | Contacts      |
 | ❌❌ | `convert_audio` | Convert Audio |
 | ❌❌ | `convert_image` | Convert Image |
@@ -36,8 +36,8 @@ Key:
 | ❌❌ | `level`         | Level         |
 | ❌❌ | `maps`          | Maps          |
 | ❌❌ | `midi`          | MIDI Player   |
-| ✔️❌ | `music`         | Music         | [Link ![][out]](https://apps.nektro.net/music/) |
-| ✔️❌ | `news`          | News          | [Link ![][out]](https://apps.nektro.net/news/) |
+| ✔️✔️ | `music`         | Music         | [Link ![][out]](https://apps.nektro.net/music/) |
+| ✔️✔️ | `news`          | News          | [Link ![][out]](https://apps.nektro.net/news/) |
 | ❌❌ | `notes`         | Notes         |
 | ❌❌ | `pdf`           | PDF           |
 | ❌❌ | `photos`        | Photos        |
