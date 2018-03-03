@@ -42,7 +42,7 @@ document.getElementById('pivot').addEventListener('fl-pivot.select', function(e)
                             makeElement('h4', {}, [a.title]),
                             makeElement('p', {}, [
                                 makeElement('img', { src:`${(a.url.substring(0,a.url.indexOf('/',8)))}/favicon.ico`, alt:'', width:'16', height:'16' }),
-                                makeElement('span', {}, a.source.name)
+                                makeElement('span', {}, [a.source.name])
                             ])
                         ])
                     ]));
