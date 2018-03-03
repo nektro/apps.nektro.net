@@ -48,6 +48,12 @@ document.getElementById('pivot').addEventListener('fl-pivot.select', function(e)
                     ]));
                 });
             }
+        })
+        .catch(() => {
+            piv_content.parentElement.appendChild(makeElement('h4', {}, ['Oops!']));
+            piv_content.parentElement.appendChild(makeElement('p', {}, ['Couldn\'t reach News API :(']));
+        })
+        .finally(() => {
             piv_item.setAttribute('data-fed', 'true');
         });
     }
