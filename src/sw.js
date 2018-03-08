@@ -5,7 +5,6 @@ const APPROVED_DOMAINS = [
     'unpkg.com',
     'fonts.googleapis.com',
     'fonts.gstatic.com',
-    's3.amazonaws.com',
     'cdn.rawgit.com'
 ];
 
