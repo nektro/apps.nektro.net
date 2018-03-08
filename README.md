@@ -16,7 +16,7 @@ Key:
 - ![][swe] : Service Worker enabled and Works Offline
 
 | ![Published][pub]? ![Works Offine][swe]? | URL `id` | Name | Link |
-| ---------- | ---- | ---- | ---- |
+| ----- | --------------- | ------------- | ---------------------------------------------------- |
 | ✔️✔️ | `calculator`    | Calculator    | [Link ![][out]](https://apps.nektro.net/calculator/) |
 | ❌❌ | `calendar`      | Calendar      |
 | ✔️✔️ | `camera`        | Camera        | [Link ![][out]](https://apps.nektro.net/camera/) |
