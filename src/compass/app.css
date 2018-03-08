@@ -1,5 +1,4 @@
 body, main {
-    min-height: calc(100vh - 32px);
     max-height: calc(100vh - 32px);
 }
 main {
@@ -17,6 +16,8 @@ main > div:nth-child(1) {
     width: 90vw;
     border: .2em solid rgba(0,0,0,.5);
     border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
 }
 .square::after {
     content: "";
@@ -81,14 +82,13 @@ main > div:nth-child(2) > div:nth-child(1) > div {
 }
 #deg {
     text-align: right;
-    font-size: 20vw;
+    font-size: 10vh;
     line-height: 0.8em;
     margin: 7vw 0;
 }
 #loc {
     text-align: left;
-    font-size: 7vw;
-    margin-right: 0;
+    font-size: 4vh;
 }
 #pos {
     text-align: center;
