@@ -13,12 +13,14 @@ self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request).then(response => {
             const requestUrl = new URL(event.request.url);
-            if (location.host === requestUrl.host || APPROVED_DOMAINS.includes(requestUrl.host)) {
-                caches.open('static-v1').then(cache => {
-                    fetch(event.request).then(response2 => {
-                        cache.put(event.request, response2);
+            if (navigator.onLine === true) {
+                if (location.host === requestUrl.host || APPROVED_DOMAINS.includes(requestUrl.host)) {
+                    caches.open('static-v1').then(cache => {
+                        fetch(event.request).then(response2 => {
+                            cache.put(event.request, response2);
+                        });
                     });
-                });
+                }
             }
             return response || fetch(event.request);
         })
