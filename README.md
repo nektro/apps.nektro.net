@@ -18,39 +18,40 @@ Key:
 | ![Published][pub]? ![Works Offine][swe]? | URL `id` | Name | Link |
 | ----- | --------------- | ------------- | ---------------------------------------------------- |
 | ✔️✔️ | `calculator`    | Calculator    | [Link ![][out]](https://apps.nektro.net/calculator/) |
-| ❌❌ | `calendar`      | Calendar      |
+| ❌❌ | `calendar`      | Calendar      | Track custom events with day, month, and yearly view |
 | ✔️✔️ | `camera`        | Camera        | [Link ![][out]](https://apps.nektro.net/camera/) |
-| ❌❌ | `clock`         | Clock         |
+| ❌❌ | `clock`         | Clock         | View the time in different styles |
 | ✔️✔️ | `compass`       | Compass       | [Link ![][out]](https://apps.nektro.net/compass/) |
-| ❌❌ | `contacts`      | Contacts      |
-| ❌❌ | `convert_audio` | Convert Audio |
-| ❌❌ | `convert_image` | Convert Image |
-| ❌❌ | `convert_video` | Convert Video |
-| ❌❌ | `drive`         | Drives        |
-| ❌❌ | `elements`      | Elements      |
-| ❌❌ | `email`         | Email         |
-| ❌❌ | `emulator`      | Emulator      |
-| ❌❌ | `exchange`      | Exchange      |
-| ❌❌ | `feedback`      | Feedback      |
-| ❌❌ | `gamepad`       | Gamepad       |
-| ❌❌ | `level`         | Level         |
-| ❌❌ | `maps`          | Maps          |
-| ❌❌ | `midi`          | MIDI Player   |
+| ❌❌ | `contacts`      | Contacts      | Track phone numbers, emails, etc |
+| ❌❌ | `convert_audio` | Convert Audio | Convert to/from "any" audio format supported |
+| ❌❌ | `convert_image` | Convert Image | Convert to/from "any" image format supported |
+| ❌❌ | `convert_video` | Convert Video | Convert to/from "any" video format supported |
+| ❌❌ | `drive`         | Drives        | Interact with the internals of WebUSB devices |
+| ❌❌ | `elements`      | Elements      | View a Periodic Table |
+| ❌❌ | `email`         | Email         | Manage the Inbox and folders of many email addresses |
+| ❌❌ | `emulator`      | Emulator      | Play ROMs online |
+| ❌❌ | `exchange`      | Exchange      | Like stocks, but tracks currencies |
+| ❌❌ | `files`         | Files         | Aribtrary file storage for web based app suite |
+| ❌❌ | `gamepad`       | Gamepad       | Test connected controllers with the Gamepad API |
+| ❌❌ | `level`         | Level         | See if surfaces are straight |
+| ❌❌ | `maps`          | Maps          | View the Earth |
+| ❌❌ | `midi`          | MIDI Player   | Like Music, but specifically for MIDI files |
 | ✔️✔️ | `music`         | Music         | [Link ![][out]](https://apps.nektro.net/music/) |
 | ✔️✔️ | `news`          | News          | [Link ![][out]](https://apps.nektro.net/news/) |
-| ❌❌ | `notes`         | Notes         |
-| ❌❌ | `pdf`           | PDF           |
-| ❌❌ | `photos`        | Photos        |
-| ❌❌ | `podcasts`      | Podcasts      |
-| ❌❌ | `reminders`     | Reminders     |
-| ❌❌ | `rss_reader`    | RSS Reader    |
-| ❌❌ | `stocks`        | Stocks        |
-| ❌❌ | `stopwatch`     | Stopwatch     |
-| ❌❌ | `timer`         | Timer         |
-| ❌❌ | `torrent`       | Web Torrent   |
-| ❌❌ | `videos`        | Videos        |
-| ❌❌ | `voice_memos`   | Voice Memos   |
-| ❌❌ | `weather`       | Weather       |
+| ❌❌ | `notes`         | Notes         | Take notes, store them on the web on your computer |
+| ❌❌ | `pdf`           | PDF           | View and merge PDF documents |
+| ❌❌ | `photos`        | Photos        | Store pictures and organize them with folders |
+| ❌❌ | `podcasts`      | Podcasts      | Download and listen to podcasts |
+| ❌❌ | `qr`            | QR(Read/Make) | Make and read QR codes |
+| ❌❌ | `reminders`     | Reminders     | Todo list with dates |
+| ❌❌ | `rss`           | RSS Reader    | RSS client - keep up with blogs, feeds, and more |
+| ❌❌ | `stocks`        | Stocks        | Track the current value of numerous stocks |
+| ❌❌ | `stopwatch`     | Stopwatch     | Time tracker |
+| ❌❌ | `timer`         | Timer         | Countdown |
+| ❌❌ | `torrent`       | Web Torrent   | Torrent client for the web |
+| ❌❌ | `videos`        | Videos        | Store videos in a web app |
+| ❌❌ | `voice_memos`   | Voice Memos   | Record audio notes |
+| ❌❌ | `weather`       | Weather       | See the estimated weather from areas around you |
 
 ## Known Issues
 - Custom Elements not supported in Edge
