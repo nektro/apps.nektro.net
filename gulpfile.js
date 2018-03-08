@@ -1,6 +1,6 @@
 /* jshint esversion:6 */
 const gulp = require('gulp');
-const gih = require("gulp-include-html");
+const gih = require('gulp-include-html');
 const sitemap = require('gulp-sitemap');
 
 gulp.task('html', function() {
