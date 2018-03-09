@@ -22,10 +22,12 @@ function update(f) {
 //
 function setOperation(n) {
     if (mop > -1) {
-        ops[n].classList.remove('active');
+        ops[mop].classList.remove('active');
+    }
+    if (n > -1) {
+        ops[n].classList.add('active');
     }
     mop = n;
-    ops[n].classList.add('active');
 }
 
 //
@@ -138,7 +140,7 @@ for (const btn of document.body.children[2].children) {
                 });
                 case 65: return update(() => { // all clear
                     res = '0';
-                    mop = -1;
+                    setOperation(-1);
                     mem = '0';
                 });
                 case 55358: return update(() => { // backspace
