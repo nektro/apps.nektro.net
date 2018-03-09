@@ -17,11 +17,11 @@ Key:
 
 | ![Published][pub]? ![Works Offine][swe]? | URL `id` | Name | Link |
 | ----- | --------------- | ------------- | ---------------------------------------------------- |
-| ✔️✔️ | `calculator`    | Calculator    | [Link ![][out]](https://apps.nektro.net/calculator/) |
+| ✔️✔️ | `calculator`    | Calculator    | [Link ![][out]](https://apps.nektro.net/calculator/) Everyone needs a place to do some basic math |
 | ❌❌ | `calendar`      | Calendar      | Track custom events with day, month, and yearly view |
-| ✔️✔️ | `camera`        | Camera        | [Link ![][out]](https://apps.nektro.net/camera/) |
+| ✔️✔️ | `camera`        | Camera        | [Link ![][out]](https://apps.nektro.net/camera/) Take and save pics with your device camera |
 | ❌❌ | `clock`         | Clock         | View the time in different styles |
-| ✔️✔️ | `compass`       | Compass       | [Link ![][out]](https://apps.nektro.net/compass/) |
+| ✔️✔️ | `compass`       | Compass       | [Link ![][out]](https://apps.nektro.net/compass/) Where supported, show North and your approx. location |
 | ❌❌ | `contacts`      | Contacts      | Track phone numbers, emails, etc |
 | ❌❌ | `convert_audio` | Convert Audio | Convert to/from "any" audio format supported |
 | ❌❌ | `convert_image` | Convert Image | Convert to/from "any" image format supported |
@@ -36,8 +36,8 @@ Key:
 | ❌❌ | `level`         | Level         | See if surfaces are straight |
 | ❌❌ | `maps`          | Maps          | View the Earth |
 | ❌❌ | `midi`          | MIDI Player   | Like Music, but specifically for MIDI files |
-| ✔️✔️ | `music`         | Music         | [Link ![][out]](https://apps.nektro.net/music/) |
-| ✔️✔️ | `news`          | News          | [Link ![][out]](https://apps.nektro.net/news/) |
+| ✔️✔️ | `music`         | Music         | [Link ![][out]](https://apps.nektro.net/music/) Upload, listen, and organize, all your favorite tunes |
+| ✔️✔️ | `news`          | News          | [Link ![][out]](https://apps.nektro.net/news/) Get all the latest headlines from over 5000+ organizations |
 | ❌❌ | `notes`         | Notes         | Take notes, store them on the web on your computer |
 | ❌❌ | `pdf`           | PDF           | View and merge PDF documents |
 | ❌❌ | `photos`        | Photos        | Store pictures and organize them with folders |
