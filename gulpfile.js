@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const gih = require('gulp-include-html');
 const sitemap = require('gulp-sitemap');
+const ts = require('gulp-typescript');
 
 gulp.task('html', function() {
     return gulp.src('./src/**/*.{html,json}')
@@ -13,6 +14,14 @@ gulp.task('static', function() {
     .pipe(gulp.dest('bin'));
 });
 
+gulp.task('typescript', function() {
+    return gulp.src('src/**/*.ts')
+    .pipe(ts({
+        target: 'ES6'
+    }))
+    .pipe(gulp.dest('bin'));
+})
+
 gulp.task('netlify', function() {
     return gulp.src('./src/_headers').pipe(gulp.dest('bin'));
 });
@@ -24,7 +33,7 @@ gulp.task('sitemap', function() {
 });
 
 gulp.task('site-dev', [
-    'html', 'static'
+    'html', 'static', 'typescript'
 ]);
 
 gulp.task('default', [
