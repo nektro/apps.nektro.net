@@ -20,7 +20,7 @@ gulp.task('typescript', function() {
         target: 'ES6'
     }))
     .pipe(gulp.dest('bin'));
-})
+});
 
 gulp.task('netlify', function() {
     return gulp.src('./src/_headers').pipe(gulp.dest('bin'));
