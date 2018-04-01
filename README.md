@@ -56,7 +56,7 @@ Key:
 ## Known Issues
 - Custom Elements not supported in Edge
 - IndexedDB not supported in Edge
-- Lots  not supported in Safari private mode
+- Lots not supported in Safari private mode
 
 ## License
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.  
