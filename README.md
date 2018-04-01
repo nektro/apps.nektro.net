@@ -56,7 +56,6 @@ Key:
 ## Known Issues
 - Custom Elements not supported in Edge
 - IndexedDB not supported in Edge
-- ES6 Modules not supported in Firefox
 - Lots  not supported in Safari private mode
 
 ## License
