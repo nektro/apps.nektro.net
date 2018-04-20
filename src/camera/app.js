@@ -40,7 +40,13 @@ Promise.resolve()
             swal('Could Not Access Camera', e.message, 'error');
         })();
         default: return (function() {
-            swal(e.name, e.message, 'error');
+            swal({
+                type: 'error',
+                title: e.name,
+                text: e.message,
+                allowOutsideClick: false,
+                showConfirmButton: false
+            });
         })();
     }
 });
