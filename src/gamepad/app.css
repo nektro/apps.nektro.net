@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    margin: auto;
+}
+.gamepad {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: darkcyan;
+    color: white;
+    margin: 1em;
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
+    border: 1px solid darkslateblue;
+}
+.gamepad > h1 {
+    margin: 0;
+    padding: .5em;
+    padding-bottom: 0;
+}
+.gamepad > div {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 1em;
+}
+.gamepad > div ~ div {
+    padding-top: 0;
+}
+.gamepad > div > div {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    border: 1px solid darkslateblue;
+}
+.gamepad > div > div ~ div {
+    border-left: 0;
+}
+.gamepad > div:nth-child(2) > div {
+    min-width: 12em;
+}
+.gamepad > div > div > span ~ span {
+    margin-top: .5em;
+}
+.gamepad > div > div > span:last-child {
+    color: rgba(255, 255, 255, 0.3);
+}

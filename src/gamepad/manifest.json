@@ -1,0 +1,6 @@
+@@include('../_resources/_manifest.html' , {
+    name: 'gamepad',
+    title: 'Gamepad',
+    color: '#4c4a48',
+    description: 'Test the connectivity of various controllers and gamepads connected to your device.'
+})

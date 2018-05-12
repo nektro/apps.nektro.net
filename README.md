@@ -32,7 +32,7 @@ Key:
 | ❌ | `emulator`      | Emulator      | Play ROMs online |
 | ❌ | `exchange`      | Exchange      | Like stocks, but tracks currencies |
 | ❌ | `files`         | Files         | Aribtrary file storage for web based app suite |
-| ❌ | `gamepad`       | Gamepad       | Test connected controllers with the Gamepad API |
+| ✔️ | `gamepad`       | Gamepad       | [Link ![][out]](https://apps.nektro.net/gamepad/) Test connected controllers with the Gamepad API |
 | ❌ | `level`         | Level         | See if surfaces are straight |
 | ❌ | `maps`          | Maps          | View the Earth |
 | ❌ | `midi`          | MIDI Player   | Like Music, but specifically for MIDI files |
