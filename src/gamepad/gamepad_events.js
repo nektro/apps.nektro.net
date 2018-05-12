@@ -59,4 +59,4 @@ function checkForGamepadData() {
 }
 
 //
-requestIdleCallback(checkForGamepadData);
+requestAnimationFrame(checkForGamepadData);
