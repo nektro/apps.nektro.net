@@ -22,7 +22,7 @@ customElements.define('x-app', class extends HTMLElement {
         this.appendChild(create_element('div', [['class','card']], [
             create_element('div', [['class','card-body']], [
                 create_element('div', [['class','row']], [
-                    create_element('div', [['col-sm-auto']], [
+                    create_element('div', [['class','col-sm-auto']], [
                         create_element('img', [['src',`./${id}/dusk.png`],['alt',`${name} Logo`]])
                     ]),
                     create_element('div', [['class','col']], [
