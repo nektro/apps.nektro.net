@@ -55,7 +55,7 @@ main > div {
 }
 
 main > div > div.c {
-    border-width: 5.1vmin;
+    border-width: 5.2vmin;
     border-style: solid;
     border-radius: 50%;
     transition: clip-path .25s;
