@@ -1,0 +1,123 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 32px);
+    overflow: hidden;
+}
+main > div {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(16, 5vmin);
+    grid-template-rows: repeat(16, 5vmin);
+    transform: rotate(-45deg);
+}
+
+#text {
+    border: 0;
+    grid-column: 8 / 10;
+    grid-row: 8 / 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    transform: rotate(45deg);
+}
+#text > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#c_sec {
+    border-color: #EAA1C2;
+    grid-column: 5 / 13;
+    grid-row: 5 / 13;
+}
+#c_min {
+    border-color: #6227AE;
+    grid-column: 4 / 14;
+    grid-row: 4 / 14;
+}
+#c_hou {
+    border-color: #747474;
+    grid-column: 3 / 15;
+    grid-row: 3 / 15;
+}
+#c_day {
+    border-color: #EA125E;
+    grid-column: 2 / 16;
+    grid-row: 2 / 16;
+}
+#c_mon {
+    border-color: #2B0645;
+    grid-column: 1 / 17;
+    grid-row: 1 / 17;
+}
+
+main > div > div.c {
+    border-width: 5vmin;
+    border-style: solid;
+    border-radius: 50%;
+    transition: clip-path .25s;
+}
+.c[p="0"]  { clip-path: polygon(50% 50%, 100% 0, 100%  2%); }
+.c[p="1"]  { clip-path: polygon(50% 50%, 100% 0, 100%  6%); }
+.c[p="2"]  { clip-path: polygon(50% 50%, 100% 0, 100% 13%); }
+.c[p="3"]  { clip-path: polygon(50% 50%, 100% 0, 100% 20%); }
+.c[p="4"]  { clip-path: polygon(50% 50%, 100% 0, 100% 26%); }
+.c[p="5"]  { clip-path: polygon(50% 50%, 100% 0, 100% 33%); }
+.c[p="6"]  { clip-path: polygon(50% 50%, 100% 0, 100% 40%); }
+.c[p="7"]  { clip-path: polygon(50% 50%, 100% 0, 100% 46%); }
+.c[p="8"]  { clip-path: polygon(50% 50%, 100% 0, 100% 53%); }
+.c[p="9"]  { clip-path: polygon(50% 50%, 100% 0, 100% 60%); }
+.c[p="10"] { clip-path: polygon(50% 50%, 100% 0, 100% 66%); }
+.c[p="11"] { clip-path: polygon(50% 50%, 100% 0, 100% 73%); }
+.c[p="12"] { clip-path: polygon(50% 50%, 100% 0, 100% 80%); }
+.c[p="13"] { clip-path: polygon(50% 50%, 100% 0, 100% 86%); }
+.c[p="14"] { clip-path: polygon(50% 50%, 100% 0, 100% 93%); }
+.c[p="15"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 100% 100%); }
+.c[p="16"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  93% 100%); }
+.c[p="17"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  86% 100%); }
+.c[p="18"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  80% 100%); }
+.c[p="19"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  73% 100%); }
+.c[p="20"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  66% 100%); }
+.c[p="21"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  60% 100%); }
+.c[p="22"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  53% 100%); }
+.c[p="23"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  46% 100%); }
+.c[p="24"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  40% 100%); }
+.c[p="25"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  33% 100%); }
+.c[p="26"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  26% 100%); }
+.c[p="27"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  20% 100%); }
+.c[p="28"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,  13% 100%); }
+.c[p="29"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%,   6% 100%); }
+.c[p="30"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 100%); }
+.c[p="31"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  93%); }
+.c[p="32"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  86%); }
+.c[p="33"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  80%); }
+.c[p="34"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  73%); }
+.c[p="35"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  66%); }
+.c[p="36"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  60%); }
+.c[p="37"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  53%); }
+.c[p="38"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  46%); }
+.c[p="39"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  40%); }
+.c[p="40"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  33%); }
+.c[p="41"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  26%); }
+.c[p="42"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  20%); }
+.c[p="43"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0  13%); }
+.c[p="44"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0   6%); }
+.c[p="45"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0,  0% 0%); }
+.c[p="46"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0,  6% 0%); }
+.c[p="47"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 13% 0%); }
+.c[p="48"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 20% 0%); }
+.c[p="49"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 26% 0%); }
+.c[p="50"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 33% 0%); }
+.c[p="51"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 40% 0%); }
+.c[p="52"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 46% 0%); }
+.c[p="53"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 53% 0%); }
+.c[p="54"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 60% 0%); }
+.c[p="55"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 66% 0%); }
+.c[p="56"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 73% 0%); }
+.c[p="57"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 80% 0%); }
+.c[p="58"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 86% 0%); }
+.c[p="59"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 93% 0%); }
+.c[p="60"] { clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0, 100% 0); }

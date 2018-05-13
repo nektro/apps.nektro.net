@@ -1,0 +1,6 @@
+@@include('../_resources/_manifest.html' , {
+    name: 'clock',
+    title: 'Clock',
+    color: '#c239b3',
+    description: 'View the time.'
+})

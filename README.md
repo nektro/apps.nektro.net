@@ -20,7 +20,7 @@ Key:
 | ✔️ | `calculator`    | Calculator    | [Link ![][out]](https://apps.nektro.net/calculator/) Everyone needs a place to do some basic math |
 | ❌ | `calendar`      | Calendar      | Track custom events with day, month, and yearly view |
 | ✔️ | `camera`        | Camera        | [Link ![][out]](https://apps.nektro.net/camera/) Take and save pics with your device camera |
-| ❌ | `clock`         | Clock         | View the time in different styles |
+| ✔️ | `clock`         | Clock         | [Link ![][out]](https://apps.nektro.net/clock/) View the time in different styles |
 | ✔️ | `compass`       | Compass       | [Link ![][out]](https://apps.nektro.net/compass/) Where supported, show North and your approx. location |
 | ❌ | `contacts`      | Contacts      | Track phone numbers, emails, etc |
 | ❌ | `convert_audio` | Convert Audio | Convert to/from "any" audio format supported |
