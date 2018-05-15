@@ -16,9 +16,7 @@ gulp.task('static', function() {
 
 gulp.task('typescript', function() {
     return gulp.src('src/**/*.ts')
-    .pipe(ts({
-        target: 'ES6'
-    }))
+    .pipe(ts({ target: 'ES6' }))
     .pipe(gulp.dest('bin'));
 });
 
