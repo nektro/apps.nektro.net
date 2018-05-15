@@ -1,6 +1,0 @@
-body { font-family:"Open Sans"; }
-img { max-height:128px; vertical-align:text-bottom; }
-.card-body { padding-bottom: 0; }
-.card { max-width: 12em; margin: 0.9em; display: inline-block; }
-.container { display: flex; flex-direction: row; flex-wrap: wrap; }
-#forkme { position: absolute; top: 0; right: 0; border: 0; }
