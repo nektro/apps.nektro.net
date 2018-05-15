@@ -2,7 +2,9 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-include-html": "^1.0.14",
+    "gulp-sass": "^4.0.1",
     "gulp-sitemap": "^5.0.0",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-typescript": "^4.0.1",
     "typescript": "^2.7.2"
   }

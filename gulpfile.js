@@ -2,6 +2,8 @@ const gulp = require('gulp');
 const gih = require('gulp-include-html');
 const sitemap = require('gulp-sitemap');
 const ts = require('gulp-typescript');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('html', function() {
     return gulp.src('./src/**/*.{html,json}')
@@ -20,6 +22,14 @@ gulp.task('typescript', function() {
     .pipe(gulp.dest('bin'));
 });
 
+gulp.task('sass', function () {
+    return gulp.src('./src/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('bin'));
+});
+
 gulp.task('netlify', function() {
     return gulp.src('./src/_headers').pipe(gulp.dest('bin'));
 });
@@ -31,7 +41,7 @@ gulp.task('sitemap', function() {
 });
 
 gulp.task('site-dev', [
-    'html', 'static', 'typescript'
+    'html', 'static', 'typescript', 'sass'
 ]);
 
 gulp.task('default', [
