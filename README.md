@@ -26,7 +26,6 @@ Key:
 | ❌ | `convert_audio` | Convert Audio | Convert to/from "any" audio format supported |
 | ❌ | `convert_image` | Convert Image | Convert to/from "any" image format supported |
 | ❌ | `convert_video` | Convert Video | Convert to/from "any" video format supported |
-| ❌ | `drive`         | Drives        | Interact with the internals of WebUSB devices |
 | ❌ | `elements`      | Elements      | View a Periodic Table |
 | ❌ | `email`         | Email         | Manage the Inbox and folders of many email addresses |
 | ❌ | `emulator`      | Emulator      | Play ROMs online |
