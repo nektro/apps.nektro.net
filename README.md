@@ -15,7 +15,7 @@ A list of all currently planned apps (in alphabetical order) and whether or not 
 Key:
 - ![][pub] : Published live on https://apps.nektro.net/
 
-| ![Published][pub]? | URL `id` | Name | Link |
+| ![Published][pub]? | Name | Link |
 | ----- | --------------- | ------------- | ---------------------------------------------------- |
 | ✔️ | `calculator`    | Calculator    | [Link ![][out]](https://apps.nektro.net/calculator/) Everyone needs a place to do some basic math |
 | ❌ | `calendar`      | Calendar      | Track custom events with day, month, and yearly view |
