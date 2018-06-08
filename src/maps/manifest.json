@@ -1,0 +1,6 @@
+@@include('../_resources/_manifest.html' , {
+    name: 'maps',
+    title: 'Maps',
+    color: '#107c10',
+    description: 'View any place on Earth, Powered by OpenStreetMap.'
+})

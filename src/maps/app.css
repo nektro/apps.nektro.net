@@ -1,0 +1,10 @@
+body {
+    overflow-y: hidden;
+}
+main {
+    min-height: calc(100vh - 32px);
+}
+iframe {
+    min-width: 100%;
+    min-height: inherit;
+}

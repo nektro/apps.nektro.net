@@ -21,6 +21,7 @@ A list of all currently planned apps (in publish order)
 | Feb 23, 2018 | Music        | https://apps.nektro.net/music/ |
 | May 11, 2018 | Gamepad      | https://apps.nektro.net/gamepad/ |
 | May 12, 2018 | Clock        | https://apps.nektro.net/clock/ |
+| Jun 08, 2018 | Maps         | https://apps.nektro.net/maps/ |
 
 ## Known Issues
 - Custom Elements not supported in Edge
