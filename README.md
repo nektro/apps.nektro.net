@@ -10,6 +10,17 @@ offline-available web apps.
 View all these apps online at https://apps.nektro.net/
 
 ## Current Progress
+A list of all currently planned apps (in publish order)
+
+| Published On |     Name     | Link |
+| ------------ | ------------ | ---- |
+| Dec 10, 2017 | News         | https://apps.nektro.net/news/ |
+| Dec 23, 2017 | Camera       | https://apps.nektro.net/camera/ |
+| Jan 05, 2018 | Calculator   | https://apps.nektro.net/calculator/ |
+| Jan 14, 2018 | Compass      | https://apps.nektro.net/compass/ |
+| Feb 23, 2018 | Music        | https://apps.nektro.net/music/ |
+| May 11, 2018 | Gamepad      | https://apps.nektro.net/gamepad/ |
+| May 12, 2018 | Clock        | https://apps.nektro.net/clock/ |
 
 ## Known Issues
 - Custom Elements not supported in Edge
