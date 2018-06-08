@@ -1,5 +1,5 @@
 //
-'use strict';
+"use strict";
 //
 function create_element(name, attrs, children) {
     var ele = document.createElement(name);
@@ -17,14 +17,14 @@ function idTOname(string) {
     return string.split('_').map(v => capitalize(v), '').join(' ');
 }
 //
-customElements.define('x-app', class extends HTMLElement {
+customElements.define("x-app", class extends HTMLElement {
     constructor() {
         super();
         let id = this.dataset.id;
         let name = idTOname(id);
-        this.appendChild(create_element('a', [['class','card'],['href',`./${id}/`]], [
-            create_element('img', [['src',`./${id}/dusk.png`],['alt',`Logo`]]),
-            create_element('h3', undefined, [ dcTN(name) ])
+        this.appendChild(create_element("a", [["class","card"],["href",`./${id}/`]], [
+            create_element("img", [["src",`./${id}/dusk.png`],["alt","Logo"]]),
+            create_element("h3", undefined, [ dcTN(name) ])
         ]));
     }
 });
