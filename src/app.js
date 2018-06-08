@@ -10,18 +10,18 @@ function create_element(name, attrs, children) {
 function dcTN(string) {
     return document.createTextNode(string);
 }
-function capitalize(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
+function capitalize(string, caps) {
+    return caps ? string.toUpperCase() : string.charAt(0).toUpperCase() + string.slice(1);
 }
-function idTOname(string) {
-    return string.split('_').map(v => capitalize(v), '').join(' ');
+function idTOname(string, caps) {
+    return string.split("_").map(v => capitalize(v, caps), "").join(" ");
 }
 //
 customElements.define("x-app", class extends HTMLElement {
     constructor() {
         super();
         let id = this.dataset.id;
-        let name = idTOname(id);
+        let name = idTOname(id, this.hasAttribute("caps"));
         this.appendChild(create_element("a", [["class","card"],["href",`./${id}/`]], [
             create_element("img", [["src",`./${id}/dusk.png`],["alt","Logo"]]),
             create_element("h3", undefined, [ dcTN(name) ])
