@@ -130,8 +130,8 @@ async function gotoSong(tr) {
     songState.loading = false;
 }
 async function playSong(tr) {
-   await gotoSong(tr);
-   await toggleSong();
+    await gotoSong(tr);
+    await toggleSong();
 }
 async function toggleSong() {
     if (songState.running) {
