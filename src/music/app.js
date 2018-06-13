@@ -109,13 +109,15 @@ async function gotoSong(tr) {
     const b = parseInt(a);
     tr.firstElementChild.innerText = 'hourglass_empty';
     const c = await db.library.where('id').equals(b).toArray();
-    const d = await audioCtx.decodeAudioData(c[0].file);
-    sprog.setAttribute('max', Math.ceil(d.duration));
+    const d = c[0].file;
+    const e = (d instanceof ArrayBuffer) ? (d) : (await (await read(d)).arrayBuffer());
+    const f = await audioCtx.decodeAudioData(e);
+    sprog.setAttribute('max', Math.ceil(f.duration));
     songState.ele.firstElementChild.innerText = 'play_circle_outline';
     songState.ele.setAttribute('class','');
     songState.source.stop();
     songState.source = audioCtx.createBufferSource();
-    songState.source.buffer = d;
+    songState.source.buffer = f;
     songState.source.connect(audioCtx.destination);
     songState.source.start(0);
     audioCtx.suspend();
@@ -153,8 +155,8 @@ document.getElementById('filein').addEventListener('change', function(e) {
     const file = e.target.files[0];
     const name = file.name.substring(0, file.name.lastIndexOf('.'));
 
-    read(e.target.files[0])
-    .then(x => Promise.all([ x.arrayBuffer(), db.library.count() ]))
+    Promise.resolve(e.target.files[0])
+    .then(x => Promise.all([ x, db.library.count() ]))
     .then(x => db.library.put(createSongObj(x[1], name, x[0])))
     .then(() => updateSongList())
     .then(() => fixCurrentSongAttrs())
