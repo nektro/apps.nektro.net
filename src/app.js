@@ -22,8 +22,9 @@ customElements.define("x-app", class extends HTMLElement {
         super();
         let id = this.dataset.id;
         let name = idTOname(id, this.hasAttribute("caps"));
+        let style = (location.search || "?color").substring(1);
         this.appendChild(create_element("a", [["class","card"],["href",`./${id}/`]], [
-            create_element("img", [["src",`./${id}/dusk.png`],["alt","Logo"]]),
+            create_element("img", [["src",`./${id}/${style}.png`],["alt","Logo"]]),
             create_element("h3", undefined, [ dcTN(name) ])
         ]));
     }
