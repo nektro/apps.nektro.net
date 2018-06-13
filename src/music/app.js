@@ -7,13 +7,13 @@ import { read }           from "https://cdn.rawgit.com/Nektro/modules.js/48ac8f5
 import { create_element } from "https://cdn.rawgit.com/Nektro/modules.js/48ac8f5/src/create_element.js";
 
 //
-const db = new Dexie('app_music');
+const db = new Dexie("app_music");
 db.version(1).stores({
-    library: 'id,dateAdded,title,file,artist,album,trackID,releaseYear,genre,time'
+    library: "id,dateAdded,title,file,artist,album,trackID,releaseYear,genre,time"
 });
 const audioCtx = new AudioContext();
-const mlist = document.getElementById('music_list');
-const sprog = document.getElementById('song_progress');
+const mlist = document.getElementById("music_list");
+const sprog = document.getElementById("song_progress");
 const dcTN  = s => document.createTextNode(s);
 
 //
@@ -36,11 +36,11 @@ function createSongObj(id, title, data) {
         dateAdded: Date.now(),
         title: title,
         file: data,
-        artist: '',
-        album: '',
-        trackID: '',
-        releaseYear: '',
-        genre: ''
+        artist: "",
+        album: "",
+        trackID: "",
+        releaseYear: "",
+        genre: ""
     };
 }
 async function updateSongList() {
@@ -48,13 +48,13 @@ async function updateSongList() {
         v.remove();
     });
     await db.library.each(song => mlist.appendChild(create_element(
-        'tr',
+        "tr",
         undefined,
         [
-            create_element('td', new Map().set('class','material-icons'), [dcTN('play_circle_outline')]),
-            ...['id','title','artist','album','trackID','releaseYear','genre'].map(v => create_element('td', undefined, [dcTN(song[v])]))
+            create_element("td", new Map().set("class","material-icons"), [dcTN("play_circle_outline")]),
+            ...["id","title","artist","album","trackID","releaseYear","genre"].map(v => create_element("td", undefined, [dcTN(song[v])]))
         ],
-        new Map().set('click', function () {
+        new Map().set("click", function () {
             return playSong(this);
         })
     )));
@@ -65,16 +65,16 @@ async function fixCurrentSongAttrs() {
     songState.ele = Array.from(mlist.children).find(v => {
         return parseInt(v.children[1].innerText) === songState.dbid;
     });
-    songState.ele.firstElementChild.innerText = 'pause_circle_filled';
-    songState.ele.setAttribute('class','active');
+    songState.ele.firstElementChild.innerText = "pause_circle_filled";
+    songState.ele.setAttribute("class","active");
     return Promise.resolve();
 }
 async function updateSongProgress() {
     if (songState.running) {
-        const elapsed = parseInt(sprog.getAttribute('value')) + 1;
-        sprog.setAttribute('value', elapsed);
+        const elapsed = parseInt(sprog.getAttribute("value")) + 1;
+        sprog.setAttribute("value", elapsed);
         const a = mlist.children.indexOf(songState.ele);
-        if (parseInt(sprog.getAttribute('max')) < elapsed) {
+        if (parseInt(sprog.getAttribute("max")) < elapsed) {
             let next = 0;
             if (songState.repeat) {
                 next = a;
@@ -90,10 +90,10 @@ async function updateSongProgress() {
             if (next === mlist.children.length) {
                 clearInterval(songState.iid);
                 toggleSong();
-                songState.ele.setAttribute('class','');
-                songState.ele.firstElementChild.innerText = 'play_circle_outline';
+                songState.ele.setAttribute("class","");
+                songState.ele.firstElementChild.innerText = "play_circle_outline";
                 songState.ele = null;
-                sprog.setAttribute('value', '0');
+                sprog.setAttribute("value", "0");
             }
             else {
                 await playSong(b);
@@ -107,14 +107,14 @@ async function gotoSong(tr) {
     if (songState.ele === null) songState.ele = tr;
     const a = tr.children[1].innerText;
     const b = parseInt(a);
-    tr.firstElementChild.innerText = 'hourglass_empty';
-    const c = await db.library.where('id').equals(b).toArray();
+    tr.firstElementChild.innerText = "hourglass_empty";
+    const c = await db.library.where("id").equals(b).toArray();
     const d = c[0].file;
     const e = (d instanceof ArrayBuffer) ? (d) : (await (await read(d)).arrayBuffer());
     const f = await audioCtx.decodeAudioData(e);
-    sprog.setAttribute('max', Math.ceil(f.duration));
-    songState.ele.firstElementChild.innerText = 'play_circle_outline';
-    songState.ele.setAttribute('class','');
+    sprog.setAttribute("max", Math.ceil(f.duration));
+    songState.ele.firstElementChild.innerText = "play_circle_outline";
+    songState.ele.setAttribute("class","");
     songState.source.stop();
     songState.source = audioCtx.createBufferSource();
     songState.source.buffer = f;
@@ -122,11 +122,11 @@ async function gotoSong(tr) {
     songState.source.start(0);
     audioCtx.suspend();
     songState.running = false;
-    sprog.setAttribute('value', '0');
+    sprog.setAttribute("value", "0");
     if (songState.iid !== null) clearInterval(songState.iid);
     songState.iid = setInterval(updateSongProgress, 1000);
-    tr.firstElementChild.innerText = 'pause_circle_outline';
-    tr.setAttribute('class','active');
+    tr.firstElementChild.innerText = "pause_circle_outline";
+    tr.setAttribute("class","active");
     songState.ele = tr;
 
     songState.loading = false;
@@ -138,51 +138,51 @@ async function playSong(tr) {
 async function toggleSong() {
     if (songState.running) {
         audioCtx.suspend();
-        songState.ele.firstElementChild.innerText = 'pause_circle_outline';
-        document.querySelector('footer').children[1].children[1].children[0].innerText = 'play_arrow';
+        songState.ele.firstElementChild.innerText = "pause_circle_outline";
+        document.querySelector("footer").children[1].children[1].children[0].innerText = "play_arrow";
         songState.running = false;
     }
     else {
         audioCtx.resume();
-        songState.ele.firstElementChild.innerText = 'pause_circle_filled';
-        document.querySelector('footer').children[1].children[1].children[0].innerText = 'pause';
+        songState.ele.firstElementChild.innerText = "pause_circle_filled";
+        document.querySelector("footer").children[1].children[1].children[0].innerText = "pause";
         songState.running = true;
     }
 }
 
 //
-document.getElementById('filein').addEventListener('change', function(e) {
+document.getElementById("filein").addEventListener("change", function(e) {
     const file = e.target.files[0];
-    const name = file.name.substring(0, file.name.lastIndexOf('.'));
+    const name = file.name.substring(0, file.name.lastIndexOf("."));
 
     Promise.resolve(e.target.files[0])
     .then(x => Promise.all([ x, db.library.count() ]))
     .then(x => db.library.put(createSongObj(x[1], name, x[0])))
     .then(() => updateSongList())
     .then(() => fixCurrentSongAttrs())
-    .then(() => swal('Success!', `Added ${name} to your library.`, 'success'));
+    .then(() => swal("Success!", `Added ${name} to your library.`, "success"));
 });
 
 //
 (function() {
     // add footer elements with button controls
-    const m_icon_m = new Map().set('class', 'material-icons');
-    document.querySelector('footer').appendChild(create_element('div', undefined, [
-        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('fast_rewind')], new Map().set('click', async function() {
+    const m_icon_m = new Map().set("class", "material-icons");
+    document.querySelector("footer").appendChild(create_element("div", undefined, [
+        create_element("div", undefined, [create_element("span", m_icon_m, [dcTN("fast_rewind")], new Map().set("click", async function() {
             if (songState.loading === false) {
                 if (songState.ele !== null) {
                     playSong(mlist.children[mlist.children.indexOf(songState.ele) - 1]);
                 }
             }
         }))]),
-        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('play_arrow')], new Map().set('click', async function() {
+        create_element("div", undefined, [create_element("span", m_icon_m, [dcTN("play_arrow")], new Map().set("click", async function() {
             if (songState.loading === false) {
                 if (songState.ele !== null) {
                     toggleSong();
                 }
             }
         }))]),
-        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('fast_forward')], new Map().set('click', async function() {
+        create_element("div", undefined, [create_element("span", m_icon_m, [dcTN("fast_forward")], new Map().set("click", async function() {
             if (songState.loading === false) {
                 let ind = 0;
                 if (songState.ele !== null) ind = mlist.children.indexOf(songState.ele) + 1;
@@ -191,27 +191,27 @@ document.getElementById('filein').addEventListener('change', function(e) {
                 playSong(mlist.children[ind]);
             }
         }))]),
-        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('repeat')], new Map().set('click', async function() {
+        create_element("div", undefined, [create_element("span", m_icon_m, [dcTN("repeat")], new Map().set("click", async function() {
             if (songState.loading === false) {
                 if (songState.shuffle) {
                     songState.shuffle = false;
-                    this.classList.remove('active');
+                    this.classList.remove("active");
                 }
                 else {
                     songState.shuffle = true;
-                    this.classList.add('active');
+                    this.classList.add("active");
                 }
             }
         }))]),
-        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('replay')], new Map().set('click', async function() {
+        create_element("div", undefined, [create_element("span", m_icon_m, [dcTN("replay")], new Map().set("click", async function() {
             if (songState.loading === false) {
                 if (songState.repeat) {
                     songState.repeat = false;
-                    this.classList.remove('active');
+                    this.classList.remove("active");
                 }
                 else {
                     songState.repeat = true;
-                    this.classList.add('active');
+                    this.classList.add("active");
                 }
             }
         }))])
