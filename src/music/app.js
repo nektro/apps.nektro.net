@@ -54,7 +54,7 @@ async function updateSongList() {
             create_element('td', new Map().set('class','material-icons'), [dcTN('play_circle_outline')]),
             ...['id','title','artist','album','trackID','releaseYear','genre'].map(v => create_element('td', undefined, [dcTN(song[v])]))
         ],
-        new Map().set('click', function (e) {
+        new Map().set('click', function () {
             return playSong(this);
         })
     )));
@@ -156,9 +156,9 @@ document.getElementById('filein').addEventListener('change', function(e) {
     read(e.target.files[0])
     .then(x => Promise.all([ x.arrayBuffer(), db.library.count() ]))
     .then(x => db.library.put(createSongObj(x[1], name, x[0])))
-    .then(x => updateSongList())
-    .then(x => fixCurrentSongAttrs())
-    .then(x => swal('Success!', `Added ${name} to your library.`, 'success'));
+    .then(() => updateSongList())
+    .then(() => fixCurrentSongAttrs())
+    .then(() => swal('Success!', `Added ${name} to your library.`, 'success'));
 });
 
 //
@@ -166,21 +166,21 @@ document.getElementById('filein').addEventListener('change', function(e) {
     // add footer elements with button controls
     const m_icon_m = new Map().set('class', 'material-icons');
     document.querySelector('footer').appendChild(create_element('div', undefined, [
-        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('fast_rewind')], new Map().set('click', async function(e) {
+        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('fast_rewind')], new Map().set('click', async function() {
             if (songState.loading === false) {
                 if (songState.ele !== null) {
                     playSong(mlist.children[mlist.children.indexOf(songState.ele) - 1]);
                 }
             }
         }))]),
-        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('play_arrow')], new Map().set('click', async function(e) {
+        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('play_arrow')], new Map().set('click', async function() {
             if (songState.loading === false) {
                 if (songState.ele !== null) {
                     toggleSong();
                 }
             }
         }))]),
-        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('fast_forward')], new Map().set('click', async function(e) {
+        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('fast_forward')], new Map().set('click', async function() {
             if (songState.loading === false) {
                 let ind = 0;
                 if (songState.ele !== null) ind = mlist.children.indexOf(songState.ele) + 1;
@@ -189,7 +189,7 @@ document.getElementById('filein').addEventListener('change', function(e) {
                 playSong(mlist.children[ind]);
             }
         }))]),
-        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('repeat')], new Map().set('click', async function(e) {
+        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('repeat')], new Map().set('click', async function() {
             if (songState.loading === false) {
                 if (songState.shuffle) {
                     songState.shuffle = false;
@@ -201,7 +201,7 @@ document.getElementById('filein').addEventListener('change', function(e) {
                 }
             }
         }))]),
-        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('replay')], new Map().set('click', async function(e) {
+        create_element('div', undefined, [create_element('span', m_icon_m, [dcTN('replay')], new Map().set('click', async function() {
             if (songState.loading === false) {
                 if (songState.repeat) {
                     songState.repeat = false;
