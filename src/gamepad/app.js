@@ -2,7 +2,7 @@
  */
 //
 import { create_element } from "https://rawgit.com/Nektro/modules.js/1ad843a/src/create_element.js";
-import "./gamepad_events.js";
+import "https://cdn.rawgit.com/Nektro/modules.js/b6cbf26/src/gamepad.js";
 
 // @see https://stackoverflow.com/a/8179307/5203655
 HTMLElement.prototype.alpha = function(a) {
