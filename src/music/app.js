@@ -2,7 +2,7 @@
 import "https://cdn.rawgit.com/Nektro/js-polyfills/b611f13/src/HTMLCollection.prototype.forEach.js";
 import "https://cdn.rawgit.com/Nektro/js-polyfills/b611f13/src/HTMLCollection.prototype.indexOf.js";
 //
-import Dexie              from "https://unpkg.com/dexie@2.0.1/dist/dexie.es.js";
+import Dexie              from "https://unpkg.com/dexie@2.0.4/dist/dexie.es.js";
 import { read }           from "https://cdn.rawgit.com/Nektro/modules.js/48ac8f5/src/read.js";
 import { create_element } from "https://cdn.rawgit.com/Nektro/modules.js/48ac8f5/src/create_element.js";
 
