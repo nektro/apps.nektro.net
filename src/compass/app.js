@@ -50,10 +50,8 @@ function compassHeading( alpha, beta, gamma ) {
 }
 
 // fetch info for compass head
-    const deg = navigator.userAgent.indexOf('Mac OS X') > -1
-              ? e.webkitCompassHeading
-              : compassHeading(e.alpha, e.beta, e.gamma);
 window.addEventListener("deviceorientation", function(e) {
+    const deg = navigator.userAgent.indexOf("Mac OS X") > -1 ? e.webkitCompassHeading : compassHeading(e.alpha, e.beta, e.gamma);
     ele_deg.innerHTML = `${parseInt(deg)}°`;
     ele_face.style.transform = `rotate(${parseInt(deg)}deg)`;
     Array.from(ele_face.children).forEach(v => v.style.transform = `rotate(${-parseInt(deg)}deg)`);
