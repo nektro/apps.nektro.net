@@ -1,10 +1,10 @@
 /* jshint esversion:6 */
 // global stuff
-const ls_key_ip = `compass_ip`;
-const ls_key_ipdata = `compass_ip_data`;
+const ls_key_ip = "compass_ip";
+const ls_key_ipdata = "compass_ip_data";
 const degtorad = Math.PI / 180;
-const ele_deg = document.getElementById('deg');
-const ele_face = document.getElementById('face');
+const ele_deg = document.getElementById("deg");
+const ele_face = document.getElementById("face");
 
 // functions
 function fetchLocationData() {
@@ -21,7 +21,7 @@ function setLocationData() {
     const data = JSON.parse(localStorage.getItem(ls_key_ipdata));
     console.log(data);
     document.getElementById('loc').innerHTML = `${data.city}<br>${data.region_name}<br>${data.country_name}`;
-    document.getElementById('pos').innerText = `${data.latitude}°, ${data.longitude}°`;
+    document.getElementById("pos").innerText = `${data.latitude}°, ${data.longitude}°`;
 }
 function compassHeading( alpha, beta, gamma ) {
     // compass heading in degress based on absolute values from "on deviceorientation"
@@ -47,17 +47,17 @@ function compassHeading( alpha, beta, gamma ) {
 }
 
 // fetch info for compass head
-window.addEventListener('deviceorientation', function(e) {
     const deg = navigator.userAgent.indexOf('Mac OS X') > -1
               ? e.webkitCompassHeading
               : compassHeading(e.alpha, e.beta, e.gamma);
+window.addEventListener("deviceorientation", function(e) {
     ele_deg.innerHTML = `${parseInt(deg)}°`;
     ele_face.style.transform = `rotate(${parseInt(deg)}deg)`;
     Array.from(ele_face.children).forEach(v => v.style.transform = `rotate(${-parseInt(deg)}deg)`);
 });
 
 // fetch info for details below
-fetch(`https://oneapi.nektro.net/ip`)
+fetch("https://oneapi.nektro.net/ip")
 .then((x) => x.text())
 .then((x) => {
     if (localStorage.getItem(ls_key_ip) != x) {
