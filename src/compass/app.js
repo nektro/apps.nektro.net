@@ -1,5 +1,8 @@
-/* jshint esversion:6 */
-// global stuff
+/**
+ */
+//
+"use strict";
+//
 const ls_key_ip = "compass_ip";
 const ls_key_ipdata = "compass_ip_data";
 const degtorad = Math.PI / 180;
