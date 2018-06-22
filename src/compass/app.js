@@ -13,7 +13,7 @@ const ele_face = document.getElementById("face");
 function fetchLocationData() {
     const ip = localStorage.getItem(ls_key_ip);
     console.log(`fetching data for: ${ip}`);
-    fetch(`https://freegeoip.net/json/${ip}`)
+    fetch(`https://ipapi.co/${ip}/json/`)
     .then((x) => x.json())
     .then((x) => {
         localStorage.setItem(ls_key_ipdata, JSON.stringify(x));
@@ -23,7 +23,7 @@ function fetchLocationData() {
 function setLocationData() {
     const data = JSON.parse(localStorage.getItem(ls_key_ipdata));
     console.log(data);
-    document.getElementById('loc').innerHTML = `${data.city}<br>${data.region_name}<br>${data.country_name}`;
+    document.getElementById("loc").innerHTML = `${data.city}<br>${data.region}<br>${data.country_name}`;
     document.getElementById("pos").innerText = `${data.latitude}°, ${data.longitude}°`;
 }
 function compassHeading( alpha, beta, gamma ) {
