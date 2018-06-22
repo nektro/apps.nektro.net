@@ -5,7 +5,8 @@ const CACHED_DOMAINS = [
     "unpkg.com",
     "fonts.googleapis.com",
     "fonts.gstatic.com",
-    "cdn.rawgit.com"
+    "cdn.rawgit.com",
+    "nektro.github.io"
 ];
 
 self.addEventListener("fetch", event => {
