@@ -1,7 +1,3 @@
-[pub]: https://png.icons8.com/color/24/000000/domain.png
-[swe]: https://png.icons8.com/color/24/000000/wifi-off.png
-[out]: https://png.icons8.com/color/16/000000/external-link.png
-
 # apps.nektro.net
 A suite of Progressive Web Apps built to provide basic applications commonly found on many operating systems available as offline-available web apps.
 
