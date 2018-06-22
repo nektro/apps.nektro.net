@@ -24,8 +24,7 @@ A list of all currently planned apps (in publish order)
 | Jun 08, 2018 | Maps         | https://apps.nektro.net/maps/ |
 
 ## Known Issues
-- Custom Elements not supported in Edge
-- IndexedDB not supported in Edge
+- :host CSS selector in Shadow DOM not supported in Edge
 - Lots not supported in Safari private mode
 
 ## License
