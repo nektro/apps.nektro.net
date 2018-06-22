@@ -24,7 +24,7 @@ customElements.define("x-app", class extends HTMLElement {
         let name = idTOname(id, this.hasAttribute("caps"));
         let style = (location.search || "?color").substring(1).match(/[a-z0-9]+/);
         this.appendChild(create_element("a", [["class","card"],["href",`./${id}/`]], [
-            create_element("img", [["src",`./${id}/${style}.png`],["alt","Logo"]]),
+            create_element("img", [["src",`./${id}/icons/${style}.png`],["alt","Logo"]]),
             create_element("h3", undefined, [ dcTN(name) ])
         ]));
     }
