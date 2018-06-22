@@ -3,8 +3,7 @@
 [out]: https://png.icons8.com/color/16/000000/external-link.png
 
 # apps.nektro.net
-A suite of Progressive Web Apps built to provide basic applications commonly found on many operating systems available as
-offline-available web apps.
+A suite of Progressive Web Apps built to provide basic applications commonly found on many operating systems available as offline-available web apps.
 
 ## Getting Started
 View all these apps online at https://apps.nektro.net/
