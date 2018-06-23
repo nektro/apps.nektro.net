@@ -17,6 +17,7 @@ const PUBLISHED_APPS = [
 const THEMES = [
     "dusk",
     "color",
+    "1em",
     "ultraviolet",
     "nolan",
 ];
