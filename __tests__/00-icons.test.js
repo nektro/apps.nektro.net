@@ -18,6 +18,7 @@ const THEMES = [
     "dusk",
     "color",
     "ultraviolet",
+    "nolan",
 ];
 
 //
