@@ -1,10 +1,10 @@
 # apps.nektro.net
 
-![loc](https://tokei.rs/b1/github/nektro/basalt)
-![license](https://img.shields.io/github/license/nektro/basalt.svg)
-![contribs](https://img.shields.io/github/contributors/nektro/basalt.svg)
-![issues](https://img.shields.io/github/issues/nektro/basalt.svg)
-![prs](https://img.shields.io/github/issues-pr/nektro/basalt.svg)
+![loc](https://tokei.rs/b1/github/nektro/apps.nektro.net)
+[![license](https://img.shields.io/github/license/nektro/apps.nektro.net.svg)](https://github.com/nektro/apps.nektro.net/blob/master/LICENSE)
+[![contribs](https://img.shields.io/github/contributors/nektro/apps.nektro.net.svg)](https://github.com/nektro/apps.nektro.net/graphs/contributors)
+[![issues](https://img.shields.io/github/issues/nektro/apps.nektro.net.svg)](https://github.com/nektro/apps.nektro.net/issues)
+[![prs](https://img.shields.io/github/issues-pr/nektro/apps.nektro.net.svg)](https://github.com/nektro/apps.nektro.net/pulls)
 [![jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
 A suite of Progressive Web Apps built to provide basic applications commonly found on many operating systems available as offline-available web apps.
