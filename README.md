@@ -6,7 +6,7 @@
 [![issues](https://img.shields.io/github/issues/nektro/apps.nektro.net.svg)](https://github.com/nektro/apps.nektro.net/issues)
 [![prs](https://img.shields.io/github/issues-pr/nektro/apps.nektro.net.svg)](https://github.com/nektro/apps.nektro.net/pulls)
 [![jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
-[![travis](https://img.shields.io/travis/nektro/apps.nektro.net.svg)]()
+[![travis](https://img.shields.io/travis/nektro/apps.nektro.net.svg)](https://travis-ci.org/nektro/apps.nektro.net)
 
 A suite of Progressive Web Apps built to provide basic applications commonly found on many operating systems available as offline-available web apps.
 No analytics. No ads. No Tracking. Just the applications you need to get your work done.
