@@ -9,6 +9,7 @@
 [![travis](https://img.shields.io/travis/nektro/apps.nektro.net.svg)]()
 
 A suite of Progressive Web Apps built to provide basic applications commonly found on many operating systems available as offline-available web apps.
+No analytics. No ads. No Tracking. Just the applications you need to get your work done.
 
 ## Getting Started
 View all these apps online at https://apps.nektro.net/
