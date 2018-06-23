@@ -5,6 +5,7 @@
 ![contribs](https://img.shields.io/github/contributors/nektro/basalt.svg)
 ![issues](https://img.shields.io/github/issues/nektro/basalt.svg)
 ![prs](https://img.shields.io/github/issues-pr/nektro/basalt.svg)
+[![jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
 A suite of Progressive Web Apps built to provide basic applications commonly found on many operating systems available as offline-available web apps.
 
