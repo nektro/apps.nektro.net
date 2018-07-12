@@ -26,7 +26,7 @@ const THEMES = [
 for (const app of PUBLISHED_APPS) {
     describe(`${app}`, () => {
         for (const th of THEMES) {
-            test(`contains the ${th} theme icon`, done => {
+            test(`contains the icon for ${th}`, done => {
                 const file = (`${__dirname}/../src/${app}/icons/${th}.png`);
                 fs.access(file, fs.constants.F_OK, (err) => {
                     if (err) {
