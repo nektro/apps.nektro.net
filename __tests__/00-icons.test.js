@@ -29,12 +29,7 @@ for (const app of PUBLISHED_APPS) {
             test(`contains the icon for ${th}`, done => {
                 const file = (`${__dirname}/../src/${app}/icons/${th}.png`);
                 fs.access(file, fs.constants.F_OK, (err) => {
-                    if (err) {
-                        expect(true).toBeFalsy();
-                    }
-                    else {
-                        expect(false).toBeFalsy();
-                    }
+                    expect(err).toBeFalsy();
                     done();
                 });
             });
