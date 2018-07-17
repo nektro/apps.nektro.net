@@ -54,7 +54,8 @@ async function updateSongList() {
             create_element("td", new Map().set("class","material-icons"), [dcTN("play_circle_outline")]),
             ...["id","title","artist","album","trackID","releaseYear","genre"].map(v => create_element("td", undefined, [dcTN(song[v])]))
         ],
-        new Map().set("click", function () {
+        new Map()
+        .set("click", function() {
             return playSong(this);
         })
     )));
