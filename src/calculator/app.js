@@ -1,12 +1,11 @@
-/* jshint esversion:6 */
 //
-const output = document.getElementById('out').firstElementChild;
-const ops = document.querySelectorAll('.op');
-const op_history = [[3,'0']];
+const output = document.getElementById("out").firstElementChild;
+const ops = document.querySelectorAll(".op");
+const op_history = [[3,"0"]];
 
 //
-let res = '0';
-let mem = '0';
+let res = "0";
+let mem = "0";
 let mop = -1;
 
 //
@@ -15,17 +14,17 @@ function update(f) {
     const v = mop < 0 ? res : mem;
     let val = parseFloat(v).toString();
     console.debug(mop, res, mem);
-    if (v.includes('.') && !val.includes('.')) val += '.';
+    if (v.includes(".") && !val.includes(".")) val += ".";
     output.innerText = val;
 }
 
 //
 function setOperation(n) {
     if (mop > -1) {
-        ops[mop].classList.remove('active');
+        ops[mop].classList.remove("active");
     }
     if (n > -1) {
-        ops[n].classList.add('active');
+        ops[n].classList.add("active");
     }
     mop = n;
 }
@@ -42,8 +41,8 @@ function do_math(a, o, b) {
 
 //
 for (const btn of document.body.children[2].children) {
-    if (btn.nodeName === 'DIV') {
-        btn.addEventListener('click', (e) => {
+    if (btn.nodeName === "DIV") {
+        btn.addEventListener("click", () => {
             const btx = btn.firstElementChild.innerText;
             switch (btx.charCodeAt(0)) {
                 case 48: case 49:
@@ -74,9 +73,9 @@ for (const btn of document.body.children[2].children) {
                     if (res.length > 0 && mem.length > 0 && mop > -1) {
                         res = do_math(parseFloat(res), mop, parseFloat(mem)).toString();
                         op_history.unshift([mop,parseFloat(mem)]);
-                        ops[mop].classList.remove('active');
+                        ops[mop].classList.remove("active");
                         mop = -1;
-                        mem = '0';
+                        mem = "0";
                     }
                     else {
                         res = do_math(parseFloat(res), ...op_history[0]).toString();
@@ -84,10 +83,10 @@ for (const btn of document.body.children[2].children) {
                 });
                 case 46: return update(() => { // decimal
                     if (mop < 0) {
-                        res = (res + '.').toString();
+                        res = (res + ".").toString();
                     }
                     else {
-                        mem = (mem + '.').toString();
+                        mem = (mem + ".").toString();
                     }
                 });
                 case 177: return update(() => { // negate
@@ -132,25 +131,25 @@ for (const btn of document.body.children[2].children) {
                 });
                 case 67: return update(() => { // clear
                     if (mop < 0) {
-                        res = '0';
+                        res = "0";
                     }
                     else {
-                        mem = '0';
+                        mem = "0";
                     }
                 });
                 case 65: return update(() => { // all clear
-                    res = '0';
+                    res = "0";
                     setOperation(-1);
-                    mem = '0';
+                    mem = "0";
                 });
                 case 55358: return update(() => { // backspace
                     if (mop < 0) {
                         res = res.substring(0, res.length - 1);
-                        if (res.length === 0) res = '0';
+                        if (res.length === 0) res = "0";
                     }
                     else {
                         mem = mem.substring(0, mem.length - 1);
-                        if (mem.length === 0) mem = '0';
+                        if (mem.length === 0) mem = "0";
                     }
                 });
             }
