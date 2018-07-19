@@ -1,6 +1,6 @@
 //
-import "https://cdn.rawgit.com/Nektro/js-polyfills/b611f13/src/HTMLCollection.prototype.forEach.js";
-import "https://cdn.rawgit.com/Nektro/js-polyfills/b611f13/src/HTMLCollection.prototype.indexOf.js";
+import "https://cdn.rawgit.com/nektro/js-polyfills/b611f13/src/HTMLCollection.prototype.forEach.js";
+import "https://cdn.rawgit.com/nektro/js-polyfills/b611f13/src/HTMLCollection.prototype.indexOf.js";
 //
 import Dexie              from "https://unpkg.com/dexie@2.0.4/dist/dexie.es.js";
 import { read }           from "https://nektro.github.io/basalt/src/read.js";
