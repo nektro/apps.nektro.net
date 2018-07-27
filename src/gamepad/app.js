@@ -40,7 +40,7 @@ window.addEventListener("x-gamepad:change", function(e) {
     // update gamepad elements through custom event
     switch (e.detail.type) {
         case "axis": {
-            const val = (parseInt(e.detail.value * 1000) + 1000);
+            const val = (Math.floor(e.detail.value * 1000) + 1000);
             const ax_ele = document.getElementById(`gp${e.detail.gamepad}`).children[1].children[e.detail.index];
             ax_ele.children[1].firstElementChild.setAttribute("value", val);
             const lue = (val / 1000 - 1).toFixed(3);

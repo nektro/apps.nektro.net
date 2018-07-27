@@ -82,7 +82,7 @@ async function updateSongProgress() {
             }
             else
             if (songState.shuffle) {
-                next = parseInt(Math.random() * mlist.children.length);
+                next = Math.floor(Math.random() * mlist.children.length);
             }
             else {
                 next = a + 1;
@@ -113,7 +113,7 @@ async function gotoSong(tr) {
     const d = c[0].file;
     const e = (d instanceof ArrayBuffer) ? (d) : (await (await read(d)).arrayBuffer());
     const f = await audioCtx.decodeAudioData(e);
-    sprog.setAttribute("max", Math.ceil(f.duration));
+    sprog.setAttribute("max", Math.ceil(f.duration).toString());
     songState.ele.firstElementChild.innerText = "play_circle_outline";
     songState.ele.setAttribute("class","");
     songState.source.stop();
@@ -188,7 +188,7 @@ document.getElementById("filein").addEventListener("change", function(e) {
                 let ind = 0;
                 if (songState.ele !== null) ind = mlist.children.indexOf(songState.ele) + 1;
                 if (ind === mlist.children.length) ind = 0;
-                if (songState.shuffle) ind = parseInt(Math.random() * mlist.children.length);
+                if (songState.shuffle) ind = Math.floor(Math.random() * mlist.children.length);
                 playSong(mlist.children[ind]);
             }
         }))]),
