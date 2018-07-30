@@ -3,6 +3,9 @@
 //
 "use strict";
 //
+import { saveAs } from "https://cdn.rawgit.com/eligrey/FileSaver.js/00e540f/src/FileSaver.js";
+
+//
 const vid = document.getElementById("display");
 const w = vid.parentElement.clientWidth;
 const h = vid.parentElement.clientHeight;
@@ -32,7 +35,7 @@ Promise.resolve()
             // TODO: send to photos app
             // https://github.com/WICG/web-share/issues/7
             // https://github.com/WICG/web-share/issues/12
-            window.open(URL.createObjectURL(b));
+            saveAs(b, `IMG_${Date.now()}`);
         });
     });
 })
