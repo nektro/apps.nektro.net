@@ -38,16 +38,21 @@ Promise.resolve()
 .catch((e) => {
     switch (e.name) {
         case "NotAllowedError": return (function() {
-            swal("Could Not Access Camera", e.message, "error");
+            swal_no_close("error", "Could Not Access Camera", e.message);
         })();
         default: return (function() {
-            swal({
-                type: "error",
-                title: e.name,
-                text: e.message,
-                allowOutsideClick: false,
-                showConfirmButton: false
-            });
+            swal_no_close("error", e.name, e.message);
         })();
     }
 });
+
+//
+function swal_no_close(type, title, text) {
+    return swal({
+        type,
+        title,
+        text,
+        allowOutsideClick: false,
+        showConfirmButton: false
+    });
+}
