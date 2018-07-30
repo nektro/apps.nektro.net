@@ -29,6 +29,8 @@ Promise.resolve()
         con.drawImage(vid, 0, 0, w, h);
         can.toBlob((b) => {
             // TODO: send to photos app
+            // https://github.com/WICG/web-share/issues/7
+            // https://github.com/WICG/web-share/issues/12
             window.open(URL.createObjectURL(b));
         });
     });
