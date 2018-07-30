@@ -19,8 +19,8 @@ Promise.resolve()
         height: { ideal: h }
     }
 }))
-.then((x) => {
-    vid.srcObject = x;
+.then((stream) => {
+    vid.srcObject = stream;
     vid.play();
 
     can.setAttribute("width", w);
