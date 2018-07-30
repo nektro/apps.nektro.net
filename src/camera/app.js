@@ -31,11 +31,11 @@ Promise.resolve()
 
     document.getElementById("snap").addEventListener("click", () => {
         con.drawImage(vid, 0, 0, w, h);
-        can.toBlob((b) => {
+        can.toBlob((blob) => {
             // TODO: send to photos app
             // https://github.com/WICG/web-share/issues/7
             // https://github.com/WICG/web-share/issues/12
-            saveAs(b, `IMG_${Date.now()}`);
+            saveAs(blob, `IMG_${Date.now()}`);
         });
     });
 })
