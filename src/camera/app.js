@@ -1,8 +1,6 @@
 /**
  */
 //
-import { x_assert } from "../_resources/x_assert.js";
-
 "use strict";
 //
 const vid = document.getElementById("display");
@@ -50,6 +48,12 @@ Promise.resolve()
 });
 
 //
+function x_assert(obj) {
+    if (obj === undefined) {
+        return Promise.reject();
+    }
+    return Promise.resolve();
+}
 function swal_no_close(type, title, text) {
     return swal({
         type,
