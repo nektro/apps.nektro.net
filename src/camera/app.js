@@ -1,6 +1,9 @@
+/**
+ */
 //
 import { x_assert } from "../_resources/x_assert.js";
 
+"use strict";
 //
 const vid = document.getElementById("display");
 const w = vid.parentElement.clientWidth;
