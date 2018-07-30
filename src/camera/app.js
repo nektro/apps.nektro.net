@@ -20,7 +20,7 @@ Promise.resolve()
     }
 }))
 .then((x) => {
-    vid.src = URL.createObjectURL(x);
+    vid.srcObject = x;
     vid.play();
 
     can.setAttribute("width", w);
