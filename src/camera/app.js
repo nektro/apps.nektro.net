@@ -37,14 +37,10 @@ Promise.resolve()
     });
 })
 .catch((e) => {
-    switch (e.name) {
-        case "NotAllowedError": return (function() {
-            swal_no_close("error", "Could Not Access Camera", e.message);
-        })();
-        default: return (function() {
-            swal_no_close("error", e.name, e.message);
-        })();
-    }
+    if (e.name === "NotAllowedError")
+        return swal_no_close("error", "Could Not Access Camera", e.message);
+    else
+        return swal_no_close("error", e.name, e.message);
 });
 
 //
