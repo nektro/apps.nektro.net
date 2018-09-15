@@ -1,0 +1,19 @@
+(
+    h1("Movie Details • "a[href="#/"]("⇪"))
+    hr
+    div[data-file="movie"](
+        div(
+            img[id="image"]
+        )
+        div(
+            h1[id="title"]
+            p[id="runtime"]
+            p[id="genre"]
+            p[id="rating"]
+            p[id="description"]
+            p[id="mpa"]
+            p(a[id="imdb"]("View on IMDB"))
+            p(a[id="yt"]("Watch Trailer on YouTube"))
+        )
+    )
+)

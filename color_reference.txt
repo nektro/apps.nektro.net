@@ -8,7 +8,7 @@
 #d13438
 #ff4343 news
 #e74856
-#e81123
+#e81123 movies
 #ea005e music
 #c30052
 #e3008c

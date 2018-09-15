@@ -1,0 +1,19 @@
+(
+    h1(
+        "Movies • "
+        span("Sort By ")
+        select[id="sort"](
+            option[value="download_count"]("Popularity")
+            option[value="date_added"]("Most Recent")
+            option[value="like_count"]("Most Liked")
+            option[value="year"]("Release Year")
+            option[value="rating"]("Rating")
+            option[value="title"]("Alphabetical")
+        )
+    )
+    hr
+    section("")
+    div(
+        button[id="more"]("Load more...")
+    )
+)

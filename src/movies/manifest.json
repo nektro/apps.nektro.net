@@ -1,0 +1,6 @@
+@@include('../_resources/_manifest.html' , {
+    name: "movies",
+    title: "Movies",
+    color: "#e81123",
+    description: "Discover movies online anytime."
+})

@@ -27,6 +27,7 @@ A list of all currently planned apps (in publish order)
 | May 11, 2018 | Gamepad      | https://apps.nektro.net/gamepad/ |
 | May 12, 2018 | Clock        | https://apps.nektro.net/clock/ |
 | Jun 08, 2018 | Maps         | https://apps.nektro.net/maps/ |
+| Sep 14, 2018 | Movies       | https://apps.nektro.net/movies/ |
 
 ## Known Issues
 - :host CSS selector in Shadow DOM not supported in Edge

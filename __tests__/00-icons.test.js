@@ -13,6 +13,7 @@ const PUBLISHED_APPS = [
     "gamepad",
     "clock",
     "maps",
+    "movies",
 ];
 const THEMES = [
     "dusk",
