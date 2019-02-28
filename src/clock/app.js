@@ -1,7 +1,7 @@
 /**
  */
 //
-import * as luxon from "https://moment.github.io/luxon/es6/luxon.min.js";
+import * as luxon from "https://moment.github.io/luxon/es6/luxon.js";
 
 //
 const e_time = document.getElementById("time");
