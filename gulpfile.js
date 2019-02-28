@@ -1,25 +1,20 @@
 const gulp = require("gulp");
-const gih = require("gulp-include-html");
+const fileinclude = require("gulp-file-include");
 const sitemap = require("gulp-sitemap");
-const ts = require("gulp-typescript");
 const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 
+const DEST = "bin";
+
 gulp.task("html", function() {
-    return gulp.src("./src/**/*.{html,json}")
-    .pipe(gih())
-    .pipe(gulp.dest("bin"));
+    return gulp.src("./src/**/*.html")
+    .pipe(fileinclude({}))
+    .pipe(gulp.dest(DEST));
 });
 
 gulp.task("static", function() {
     return gulp.src("./src/**/*.{css,js,png,corgi}", { dot: true })
-    .pipe(gulp.dest("bin"));
-});
-
-gulp.task("typescript", function() {
-    return gulp.src("src/**/*.ts")
-    .pipe(ts({ target: "ES6" }))
-    .pipe(gulp.dest("bin"));
+    .pipe(gulp.dest(DEST));
 });
 
 gulp.task("sass", function () {
@@ -27,23 +22,23 @@ gulp.task("sass", function () {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: "compressed"}))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest("bin"));
+    .pipe(gulp.dest(DEST));
 });
 
 gulp.task("netlify", function() {
-    return gulp.src("./src/_headers").pipe(gulp.dest("bin"));
+    return gulp.src("./src/_headers")
+    .pipe(gulp.dest(DEST));
 });
 
 gulp.task("sitemap", function() {
     return gulp.src("./src/**/index.html", { read:false })
     .pipe(sitemap({ siteUrl:"https://apps.nektro.net" }))
-    .pipe(gulp.dest("bin"));
+    .pipe(gulp.dest(DEST));
 });
 
 gulp.task("site-dev", [
     "html",
     "static",
-    "typescript",
     "sass",
 ]);
 
